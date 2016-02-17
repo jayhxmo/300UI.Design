@@ -13,18 +13,46 @@
 		@include size(100% 100%);
 		@include margin(0);
 		@include padding(em(15px));
+		
 		background: rgba(0, 0, 0, 0.33);
+		color: $color-white;
+		
 		opacity: 0;
+		text-align: center;
+
+		@include transition(all $animation-duration $animation-timing);
 	}
 
 	&:hover {
-		
 		.visible-container {
 			opacity: 1;
 		}
 	}
 }
 
+.day {
+	@include size(em(36px));
+	@include margin(0);
+	@include padding(0);
+	@include background(rgba(255, 255, 255, 0.33));
+	font-size: em(24px);
+	border-radius: 50%;
+	line-height: em(36px);
+}
+
+.vertical-center {
+	@include margin(0);
+	@include padding(em(15px));
+
+	h2.name {
+		@include margin(0 auto em(5px));
+	}
+
+	p {
+		@include margin(0 auto);
+		color: $color-gallery;
+	}
+}
 #day-1 {
 	@include background(url("../images/day1.jpg"));
 }

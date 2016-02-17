@@ -333,9 +333,34 @@ html {
     margin: 0;
     padding: 0.9375em;
     background: rgba(0, 0, 0, 0.33);
-    opacity: 0; }
+    color: #fdfdfd;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: all 175ms ease;
+    -moz-transition: all 175ms ease;
+    transition: all 175ms ease; }
   .UI:hover .visible-container {
     opacity: 1; }
+
+.day {
+  height: 2.25em;
+  width: 2.25em;
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.33);
+  background: rgba(255, 255, 255, 0.33);
+  font-size: 1.5em;
+  border-radius: 50%;
+  line-height: 2.25em; }
+
+.vertical-center {
+  margin: 0;
+  padding: 0.9375em; }
+  .vertical-center h2.name {
+    margin: 0 auto 0.3125em; }
+  .vertical-center p {
+    margin: 0 auto;
+    color: #eee; }
 
 #day-1 {
   background: url("../images/day1.jpg");
