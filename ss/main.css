@@ -1,54 +1,344 @@
-/*
-Error: File to import not found or unreadable: lib/bourbon.
-       Load path: C:/Users/jayhx/Workspace/gallery
-        on line 1 of ./ss/main.scss
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Nunito:400,300,700);
+img, legend {
+  border: 0; }
 
-1: @import "lib/bourbon";
-2: @import "base/base";
-3: @import "components/all";
+legend, td, th {
+  padding: 0; }
 
-Backtrace:
-./ss/main.scss:1
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.18/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: lib/bourbon.\A        Load path: C:/Users/jayhx/Workspace/gallery\A         on line 1 of ./ss/main.scss\A \A 1: @import \"lib/bourbon\";\A 2: @import \"base/base\";\A 3: @import \"components/all\";"; }
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, optgroup, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre, textarea {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/****************************************************************
+*****************************************************************
+  /$$$$$$   /$$$$$$  /$$        /$$$$$$  /$$$$$$$   /$$$$$$ 
+ /$$__  $$ /$$__  $$| $$       /$$__  $$| $$__  $$ /$$__  $$
+| $$  \__/| $$  \ $$| $$      | $$  \ $$| $$  \ $$| $$  \__/
+| $$      | $$  | $$| $$      | $$  | $$| $$$$$$$/|  $$$$$$ 
+| $$      | $$  | $$| $$      | $$  | $$| $$__  $$ \____  $$
+| $$    $$| $$  | $$| $$      | $$  | $$| $$  \ $$ /$$  \ $$
+|  $$$$$$/|  $$$$$$/| $$$$$$$$|  $$$$$$/| $$  | $$|  $$$$$$/
+ \______/  \______/ |________/ \______/ |__/  |__/ \______/ 
+
+*****************************************************************
+****************************************************************/
+/****************************************************************
+*****************************************************************
+
+ /$$$$$$$$ /$$     /$$ /$$$$$$$   /$$$$$$ 
+|__  $$__/|  $$   /$$/| $$__  $$ /$$__  $$
+   | $$    \  $$ /$$/ | $$  \ $$| $$  \ $$
+   | $$     \  $$$$/  | $$$$$$$/| $$  | $$
+   | $$      \  $$/   | $$____/ | $$  | $$
+   | $$       | $$    | $$      | $$  | $$
+   | $$       | $$    | $$      |  $$$$$$/
+   |__/       |__/    |__/       \______/ 
+                                          
+*****************************************************************
+****************************************************************/
+/****************************************************************
+*****************************************************************
+
+ /$$      /$$ /$$$$$$  /$$$$$$   /$$$$$$ 
+| $$$    /$$$|_  $$_/ /$$__  $$ /$$__  $$
+| $$$$  /$$$$  | $$  | $$  \__/| $$  \__/
+| $$ $$/$$ $$  | $$  |  $$$$$$ | $$      
+| $$  $$$| $$  | $$   \____  $$| $$      
+| $$\  $ | $$  | $$   /$$  \ $$| $$    $$
+| $$ \/  | $$ /$$$$$$|  $$$$$$/|  $$$$$$/
+|__/     |__/|______/ \______/  \______/ 
+                                         
+                                          
+*****************************************************************
+****************************************************************/
+html, body {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  margin: 0;
+  padding: 0; }
+
+.display-none {
+  display: none;
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  transition: all 175ms ease; }
+
+.visible-none {
+  opacity: 0;
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  transition: all 175ms ease; }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (min-width: 33.75em) {
+    html {
+      font-size: 65%; } }
+  @media screen and (min-width: 61.625em) {
+    html {
+      font-size: 70%; } }
+  @media screen and (min-width: 75em) {
+    html {
+      font-size: 80; } }
+  @media screen and (min-width: 100em) {
+    html {
+      font-size: 92.5%; } }
+
+body {
+  color: #1d1d1d;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.25; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 0 0 0.625em;
+  padding: 0; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.25em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.125em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: 0.75em; }
+
+p {
+  font-family: sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 1.8; }
+
+a {
+  color: #229aff;
+  text-decoration: none;
+  transition: color 175ms ease; }
+  a:active, a:focus, a:hover {
+    opacity: 0.8; }
+
+button {
+  height: 3.125em;
+  width: 12.5em;
+  color: #fdfdfd;
+  background-color: #229aff;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  border: 0;
+  border-radius: 3px;
+  outline: none;
+  text-transform: uppercase;
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  transition: all 175ms ease; }
+  button:hover {
+    background-color: #1f8be6; }
+
+input {
+  height: 3.4375em;
+  width: 30em;
+  margin: 0 auto;
+  padding: 0 auto;
+  color: #1d1d1d;
+  background-color: #fdfdfd;
+  border: 0;
+  border-radius: 1px;
+  font: normal normal 400 0.29091 sans-serif;
+  text-align: left;
+  outline: none;
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  transition: all 175ms ease; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.row {
+  display: block; }
+  .row::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.container {
+  width: 50em;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.UI {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 20%;
+  height: 15vw;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important; }
+  .UI:last-child {
+    margin-right: 0; }
+  .UI .visible-container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0.9375em;
+    background: rgba(0, 0, 0, 0.33);
+    opacity: 0; }
+  .UI:hover .visible-container {
+    opacity: 1; }
+
+#day-1 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+/*# sourceMappingURL=main.css.map */

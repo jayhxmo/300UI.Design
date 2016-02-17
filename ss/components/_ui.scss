@@ -1,0 +1,30 @@
+.UI {
+	@include span-columns(3);
+	height: 15vw;
+	
+	@include margin(0);
+	@include padding(0);
+
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: cover !important;
+
+	.visible-container {
+		@include size(100% 100%);
+		@include margin(0);
+		@include padding(em(15px));
+		background: rgba(0, 0, 0, 0.33);
+		opacity: 0;
+	}
+
+	&:hover {
+		
+		.visible-container {
+			opacity: 1;
+		}
+	}
+}
+
+#day-1 {
+	@include background(url("../images/day1.jpg"));
+}
