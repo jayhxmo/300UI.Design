@@ -339,12 +339,10 @@ html {
     transition: all 175ms ease; }
   .UI:hover .visible-container {
     opacity: 1; }
-    .UI:hover .visible-container .view {
-      margin-right: 0.3125em; }
-      .UI:hover .visible-container .view span {
-        margin-left: 0.3125em;
-        background-position: right center;
-        opacity: 1; }
+    .UI:hover .visible-container .view span.arrow {
+      margin-left: 0.3125em;
+      background-position: right center;
+      opacity: 1; }
   .UI:hover .day {
     cursor: pointer;
     opacity: 0; }
@@ -408,11 +406,11 @@ html {
 
 button.view {
   display: inline-block;
-  margin: 5vh -1.25em 0 auto;
+  margin: 5vh auto 0;
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease; }
-  button.view span {
+  button.view span.arrow {
     display: inline-block;
     width: 1.25em;
     height: 0.6875em;
