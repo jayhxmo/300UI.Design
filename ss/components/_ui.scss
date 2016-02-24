@@ -1,6 +1,6 @@
 .UI {
 	position: relative;
-	@include span-columns(4);
+	@include span-columns(3);
 	height: 15vw;
 	
 	@include margin(0);
@@ -10,12 +10,27 @@
 	background-position: center center !important;
 	background-size: cover !important;
 
+	@include media (max-width $bp-lg) {
+		@include span-columns(4);
+		height: 20vw;
+	}
+
+	@include media (max-width $bp-md) {
+		@include span-columns(6);
+		height: 30vw;
+	}
+
+	@include media (max-width $bp-sm) {
+		@include span-columns(12);
+		height: 60vw;
+	}
+
 	.visible-container {
 		@include size(100% 100%);
 		@include margin(0);
 		@include padding(0);
 
-		background: rgba(0, 0, 0, 0.33);
+		background: rgba(0, 0, 0, 0.45);
 		color: $color-white;
 		
 		opacity: 0;

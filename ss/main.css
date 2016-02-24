@@ -332,12 +332,39 @@ html {
   background-size: cover !important; }
   .UI:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 75em) {
+    .UI {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 33.33333%;
+      height: 20vw; }
+      .UI:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 61.625em) {
+    .UI {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 50%;
+      height: 30vw; }
+      .UI:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 33.75em) {
+    .UI {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 100%;
+      height: 60vw; }
+      .UI:last-child {
+        margin-right: 0; } }
   .UI .visible-container {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background: rgba(0, 0, 0, 0.33);
+    background: rgba(0, 0, 0, 0.45);
     color: #fdfdfd;
     opacity: 0;
     text-align: center; }
@@ -416,403 +443,403 @@ button.view {
     line-height: 2.25em; }
 
 #day-1 {
-  background: url("../images/Day" + 1 + "-UI.jpg");
-  background: url("../images/Day" + 1 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 1 - UI.jpg");
+  background: url("../images/UIs/Day 1 - UI.jpg"); }
 
 #day-2 {
-  background: url("../images/Day" + 2 + "-UI.jpg");
-  background: url("../images/Day" + 2 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 2 - UI.jpg");
+  background: url("../images/UIs/Day 2 - UI.jpg"); }
 
 #day-3 {
-  background: url("../images/Day" + 3 + "-UI.jpg");
-  background: url("../images/Day" + 3 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 3 - UI.jpg");
+  background: url("../images/UIs/Day 3 - UI.jpg"); }
 
 #day-4 {
-  background: url("../images/Day" + 4 + "-UI.jpg");
-  background: url("../images/Day" + 4 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 4 - UI.jpg");
+  background: url("../images/UIs/Day 4 - UI.jpg"); }
 
 #day-5 {
-  background: url("../images/Day" + 5 + "-UI.jpg");
-  background: url("../images/Day" + 5 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 5 - UI.jpg");
+  background: url("../images/UIs/Day 5 - UI.jpg"); }
 
 #day-6 {
-  background: url("../images/Day" + 6 + "-UI.jpg");
-  background: url("../images/Day" + 6 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 6 - UI.jpg");
+  background: url("../images/UIs/Day 6 - UI.jpg"); }
 
 #day-7 {
-  background: url("../images/Day" + 7 + "-UI.jpg");
-  background: url("../images/Day" + 7 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 7 - UI.jpg");
+  background: url("../images/UIs/Day 7 - UI.jpg"); }
 
 #day-8 {
-  background: url("../images/Day" + 8 + "-UI.jpg");
-  background: url("../images/Day" + 8 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 8 - UI.jpg");
+  background: url("../images/UIs/Day 8 - UI.jpg"); }
 
 #day-9 {
-  background: url("../images/Day" + 9 + "-UI.jpg");
-  background: url("../images/Day" + 9 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 9 - UI.jpg");
+  background: url("../images/UIs/Day 9 - UI.jpg"); }
 
 #day-10 {
-  background: url("../images/Day" + 10 + "-UI.jpg");
-  background: url("../images/Day" + 10 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 10 - UI.jpg");
+  background: url("../images/UIs/Day 10 - UI.jpg"); }
 
 #day-11 {
-  background: url("../images/Day" + 11 + "-UI.jpg");
-  background: url("../images/Day" + 11 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 11 - UI.jpg");
+  background: url("../images/UIs/Day 11 - UI.jpg"); }
 
 #day-12 {
-  background: url("../images/Day" + 12 + "-UI.jpg");
-  background: url("../images/Day" + 12 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 12 - UI.jpg");
+  background: url("../images/UIs/Day 12 - UI.jpg"); }
 
 #day-13 {
-  background: url("../images/Day" + 13 + "-UI.jpg");
-  background: url("../images/Day" + 13 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 13 - UI.jpg");
+  background: url("../images/UIs/Day 13 - UI.jpg"); }
 
 #day-14 {
-  background: url("../images/Day" + 14 + "-UI.jpg");
-  background: url("../images/Day" + 14 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 14 - UI.jpg");
+  background: url("../images/UIs/Day 14 - UI.jpg"); }
 
 #day-15 {
-  background: url("../images/Day" + 15 + "-UI.jpg");
-  background: url("../images/Day" + 15 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 15 - UI.jpg");
+  background: url("../images/UIs/Day 15 - UI.jpg"); }
 
 #day-16 {
-  background: url("../images/Day" + 16 + "-UI.jpg");
-  background: url("../images/Day" + 16 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 16 - UI.jpg");
+  background: url("../images/UIs/Day 16 - UI.jpg"); }
 
 #day-17 {
-  background: url("../images/Day" + 17 + "-UI.jpg");
-  background: url("../images/Day" + 17 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 17 - UI.jpg");
+  background: url("../images/UIs/Day 17 - UI.jpg"); }
 
 #day-18 {
-  background: url("../images/Day" + 18 + "-UI.jpg");
-  background: url("../images/Day" + 18 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 18 - UI.jpg");
+  background: url("../images/UIs/Day 18 - UI.jpg"); }
 
 #day-19 {
-  background: url("../images/Day" + 19 + "-UI.jpg");
-  background: url("../images/Day" + 19 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 19 - UI.jpg");
+  background: url("../images/UIs/Day 19 - UI.jpg"); }
 
 #day-20 {
-  background: url("../images/Day" + 20 + "-UI.jpg");
-  background: url("../images/Day" + 20 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 20 - UI.jpg");
+  background: url("../images/UIs/Day 20 - UI.jpg"); }
 
 #day-21 {
-  background: url("../images/Day" + 21 + "-UI.jpg");
-  background: url("../images/Day" + 21 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 21 - UI.jpg");
+  background: url("../images/UIs/Day 21 - UI.jpg"); }
 
 #day-22 {
-  background: url("../images/Day" + 22 + "-UI.jpg");
-  background: url("../images/Day" + 22 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 22 - UI.jpg");
+  background: url("../images/UIs/Day 22 - UI.jpg"); }
 
 #day-23 {
-  background: url("../images/Day" + 23 + "-UI.jpg");
-  background: url("../images/Day" + 23 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 23 - UI.jpg");
+  background: url("../images/UIs/Day 23 - UI.jpg"); }
 
 #day-24 {
-  background: url("../images/Day" + 24 + "-UI.jpg");
-  background: url("../images/Day" + 24 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 24 - UI.jpg");
+  background: url("../images/UIs/Day 24 - UI.jpg"); }
 
 #day-25 {
-  background: url("../images/Day" + 25 + "-UI.jpg");
-  background: url("../images/Day" + 25 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 25 - UI.jpg");
+  background: url("../images/UIs/Day 25 - UI.jpg"); }
 
 #day-26 {
-  background: url("../images/Day" + 26 + "-UI.jpg");
-  background: url("../images/Day" + 26 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 26 - UI.jpg");
+  background: url("../images/UIs/Day 26 - UI.jpg"); }
 
 #day-27 {
-  background: url("../images/Day" + 27 + "-UI.jpg");
-  background: url("../images/Day" + 27 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 27 - UI.jpg");
+  background: url("../images/UIs/Day 27 - UI.jpg"); }
 
 #day-28 {
-  background: url("../images/Day" + 28 + "-UI.jpg");
-  background: url("../images/Day" + 28 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 28 - UI.jpg");
+  background: url("../images/UIs/Day 28 - UI.jpg"); }
 
 #day-29 {
-  background: url("../images/Day" + 29 + "-UI.jpg");
-  background: url("../images/Day" + 29 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 29 - UI.jpg");
+  background: url("../images/UIs/Day 29 - UI.jpg"); }
 
 #day-30 {
-  background: url("../images/Day" + 30 + "-UI.jpg");
-  background: url("../images/Day" + 30 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 30 - UI.jpg");
+  background: url("../images/UIs/Day 30 - UI.jpg"); }
 
 #day-31 {
-  background: url("../images/Day" + 31 + "-UI.jpg");
-  background: url("../images/Day" + 31 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 31 - UI.jpg");
+  background: url("../images/UIs/Day 31 - UI.jpg"); }
 
 #day-32 {
-  background: url("../images/Day" + 32 + "-UI.jpg");
-  background: url("../images/Day" + 32 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 32 - UI.jpg");
+  background: url("../images/UIs/Day 32 - UI.jpg"); }
 
 #day-33 {
-  background: url("../images/Day" + 33 + "-UI.jpg");
-  background: url("../images/Day" + 33 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 33 - UI.jpg");
+  background: url("../images/UIs/Day 33 - UI.jpg"); }
 
 #day-34 {
-  background: url("../images/Day" + 34 + "-UI.jpg");
-  background: url("../images/Day" + 34 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 34 - UI.jpg");
+  background: url("../images/UIs/Day 34 - UI.jpg"); }
 
 #day-35 {
-  background: url("../images/Day" + 35 + "-UI.jpg");
-  background: url("../images/Day" + 35 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 35 - UI.jpg");
+  background: url("../images/UIs/Day 35 - UI.jpg"); }
 
 #day-36 {
-  background: url("../images/Day" + 36 + "-UI.jpg");
-  background: url("../images/Day" + 36 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 36 - UI.jpg");
+  background: url("../images/UIs/Day 36 - UI.jpg"); }
 
 #day-37 {
-  background: url("../images/Day" + 37 + "-UI.jpg");
-  background: url("../images/Day" + 37 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 37 - UI.jpg");
+  background: url("../images/UIs/Day 37 - UI.jpg"); }
 
 #day-38 {
-  background: url("../images/Day" + 38 + "-UI.jpg");
-  background: url("../images/Day" + 38 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 38 - UI.jpg");
+  background: url("../images/UIs/Day 38 - UI.jpg"); }
 
 #day-39 {
-  background: url("../images/Day" + 39 + "-UI.jpg");
-  background: url("../images/Day" + 39 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 39 - UI.jpg");
+  background: url("../images/UIs/Day 39 - UI.jpg"); }
 
 #day-40 {
-  background: url("../images/Day" + 40 + "-UI.jpg");
-  background: url("../images/Day" + 40 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 40 - UI.jpg");
+  background: url("../images/UIs/Day 40 - UI.jpg"); }
 
 #day-41 {
-  background: url("../images/Day" + 41 + "-UI.jpg");
-  background: url("../images/Day" + 41 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 41 - UI.jpg");
+  background: url("../images/UIs/Day 41 - UI.jpg"); }
 
 #day-42 {
-  background: url("../images/Day" + 42 + "-UI.jpg");
-  background: url("../images/Day" + 42 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 42 - UI.jpg");
+  background: url("../images/UIs/Day 42 - UI.jpg"); }
 
 #day-43 {
-  background: url("../images/Day" + 43 + "-UI.jpg");
-  background: url("../images/Day" + 43 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 43 - UI.jpg");
+  background: url("../images/UIs/Day 43 - UI.jpg"); }
 
 #day-44 {
-  background: url("../images/Day" + 44 + "-UI.jpg");
-  background: url("../images/Day" + 44 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 44 - UI.jpg");
+  background: url("../images/UIs/Day 44 - UI.jpg"); }
 
 #day-45 {
-  background: url("../images/Day" + 45 + "-UI.jpg");
-  background: url("../images/Day" + 45 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 45 - UI.jpg");
+  background: url("../images/UIs/Day 45 - UI.jpg"); }
 
 #day-46 {
-  background: url("../images/Day" + 46 + "-UI.jpg");
-  background: url("../images/Day" + 46 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 46 - UI.jpg");
+  background: url("../images/UIs/Day 46 - UI.jpg"); }
 
 #day-47 {
-  background: url("../images/Day" + 47 + "-UI.jpg");
-  background: url("../images/Day" + 47 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 47 - UI.jpg");
+  background: url("../images/UIs/Day 47 - UI.jpg"); }
 
 #day-48 {
-  background: url("../images/Day" + 48 + "-UI.jpg");
-  background: url("../images/Day" + 48 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 48 - UI.jpg");
+  background: url("../images/UIs/Day 48 - UI.jpg"); }
 
 #day-49 {
-  background: url("../images/Day" + 49 + "-UI.jpg");
-  background: url("../images/Day" + 49 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 49 - UI.jpg");
+  background: url("../images/UIs/Day 49 - UI.jpg"); }
 
 #day-50 {
-  background: url("../images/Day" + 50 + "-UI.jpg");
-  background: url("../images/Day" + 50 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 50 - UI.jpg");
+  background: url("../images/UIs/Day 50 - UI.jpg"); }
 
 #day-51 {
-  background: url("../images/Day" + 51 + "-UI.jpg");
-  background: url("../images/Day" + 51 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 51 - UI.jpg");
+  background: url("../images/UIs/Day 51 - UI.jpg"); }
 
 #day-52 {
-  background: url("../images/Day" + 52 + "-UI.jpg");
-  background: url("../images/Day" + 52 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 52 - UI.jpg");
+  background: url("../images/UIs/Day 52 - UI.jpg"); }
 
 #day-53 {
-  background: url("../images/Day" + 53 + "-UI.jpg");
-  background: url("../images/Day" + 53 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 53 - UI.jpg");
+  background: url("../images/UIs/Day 53 - UI.jpg"); }
 
 #day-54 {
-  background: url("../images/Day" + 54 + "-UI.jpg");
-  background: url("../images/Day" + 54 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 54 - UI.jpg");
+  background: url("../images/UIs/Day 54 - UI.jpg"); }
 
 #day-55 {
-  background: url("../images/Day" + 55 + "-UI.jpg");
-  background: url("../images/Day" + 55 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 55 - UI.jpg");
+  background: url("../images/UIs/Day 55 - UI.jpg"); }
 
 #day-56 {
-  background: url("../images/Day" + 56 + "-UI.jpg");
-  background: url("../images/Day" + 56 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 56 - UI.jpg");
+  background: url("../images/UIs/Day 56 - UI.jpg"); }
 
 #day-57 {
-  background: url("../images/Day" + 57 + "-UI.jpg");
-  background: url("../images/Day" + 57 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 57 - UI.jpg");
+  background: url("../images/UIs/Day 57 - UI.jpg"); }
 
 #day-58 {
-  background: url("../images/Day" + 58 + "-UI.jpg");
-  background: url("../images/Day" + 58 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 58 - UI.jpg");
+  background: url("../images/UIs/Day 58 - UI.jpg"); }
 
 #day-59 {
-  background: url("../images/Day" + 59 + "-UI.jpg");
-  background: url("../images/Day" + 59 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 59 - UI.jpg");
+  background: url("../images/UIs/Day 59 - UI.jpg"); }
 
 #day-60 {
-  background: url("../images/Day" + 60 + "-UI.jpg");
-  background: url("../images/Day" + 60 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 60 - UI.jpg");
+  background: url("../images/UIs/Day 60 - UI.jpg"); }
 
 #day-61 {
-  background: url("../images/Day" + 61 + "-UI.jpg");
-  background: url("../images/Day" + 61 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 61 - UI.jpg");
+  background: url("../images/UIs/Day 61 - UI.jpg"); }
 
 #day-62 {
-  background: url("../images/Day" + 62 + "-UI.jpg");
-  background: url("../images/Day" + 62 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 62 - UI.jpg");
+  background: url("../images/UIs/Day 62 - UI.jpg"); }
 
 #day-63 {
-  background: url("../images/Day" + 63 + "-UI.jpg");
-  background: url("../images/Day" + 63 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 63 - UI.jpg");
+  background: url("../images/UIs/Day 63 - UI.jpg"); }
 
 #day-64 {
-  background: url("../images/Day" + 64 + "-UI.jpg");
-  background: url("../images/Day" + 64 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 64 - UI.jpg");
+  background: url("../images/UIs/Day 64 - UI.jpg"); }
 
 #day-65 {
-  background: url("../images/Day" + 65 + "-UI.jpg");
-  background: url("../images/Day" + 65 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 65 - UI.jpg");
+  background: url("../images/UIs/Day 65 - UI.jpg"); }
 
 #day-66 {
-  background: url("../images/Day" + 66 + "-UI.jpg");
-  background: url("../images/Day" + 66 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 66 - UI.jpg");
+  background: url("../images/UIs/Day 66 - UI.jpg"); }
 
 #day-67 {
-  background: url("../images/Day" + 67 + "-UI.jpg");
-  background: url("../images/Day" + 67 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 67 - UI.jpg");
+  background: url("../images/UIs/Day 67 - UI.jpg"); }
 
 #day-68 {
-  background: url("../images/Day" + 68 + "-UI.jpg");
-  background: url("../images/Day" + 68 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 68 - UI.jpg");
+  background: url("../images/UIs/Day 68 - UI.jpg"); }
 
 #day-69 {
-  background: url("../images/Day" + 69 + "-UI.jpg");
-  background: url("../images/Day" + 69 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 69 - UI.jpg");
+  background: url("../images/UIs/Day 69 - UI.jpg"); }
 
 #day-70 {
-  background: url("../images/Day" + 70 + "-UI.jpg");
-  background: url("../images/Day" + 70 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 70 - UI.jpg");
+  background: url("../images/UIs/Day 70 - UI.jpg"); }
 
 #day-71 {
-  background: url("../images/Day" + 71 + "-UI.jpg");
-  background: url("../images/Day" + 71 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 71 - UI.jpg");
+  background: url("../images/UIs/Day 71 - UI.jpg"); }
 
 #day-72 {
-  background: url("../images/Day" + 72 + "-UI.jpg");
-  background: url("../images/Day" + 72 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 72 - UI.jpg");
+  background: url("../images/UIs/Day 72 - UI.jpg"); }
 
 #day-73 {
-  background: url("../images/Day" + 73 + "-UI.jpg");
-  background: url("../images/Day" + 73 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 73 - UI.jpg");
+  background: url("../images/UIs/Day 73 - UI.jpg"); }
 
 #day-74 {
-  background: url("../images/Day" + 74 + "-UI.jpg");
-  background: url("../images/Day" + 74 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 74 - UI.jpg");
+  background: url("../images/UIs/Day 74 - UI.jpg"); }
 
 #day-75 {
-  background: url("../images/Day" + 75 + "-UI.jpg");
-  background: url("../images/Day" + 75 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 75 - UI.jpg");
+  background: url("../images/UIs/Day 75 - UI.jpg"); }
 
 #day-76 {
-  background: url("../images/Day" + 76 + "-UI.jpg");
-  background: url("../images/Day" + 76 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 76 - UI.jpg");
+  background: url("../images/UIs/Day 76 - UI.jpg"); }
 
 #day-77 {
-  background: url("../images/Day" + 77 + "-UI.jpg");
-  background: url("../images/Day" + 77 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 77 - UI.jpg");
+  background: url("../images/UIs/Day 77 - UI.jpg"); }
 
 #day-78 {
-  background: url("../images/Day" + 78 + "-UI.jpg");
-  background: url("../images/Day" + 78 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 78 - UI.jpg");
+  background: url("../images/UIs/Day 78 - UI.jpg"); }
 
 #day-79 {
-  background: url("../images/Day" + 79 + "-UI.jpg");
-  background: url("../images/Day" + 79 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 79 - UI.jpg");
+  background: url("../images/UIs/Day 79 - UI.jpg"); }
 
 #day-80 {
-  background: url("../images/Day" + 80 + "-UI.jpg");
-  background: url("../images/Day" + 80 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 80 - UI.jpg");
+  background: url("../images/UIs/Day 80 - UI.jpg"); }
 
 #day-81 {
-  background: url("../images/Day" + 81 + "-UI.jpg");
-  background: url("../images/Day" + 81 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 81 - UI.jpg");
+  background: url("../images/UIs/Day 81 - UI.jpg"); }
 
 #day-82 {
-  background: url("../images/Day" + 82 + "-UI.jpg");
-  background: url("../images/Day" + 82 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 82 - UI.jpg");
+  background: url("../images/UIs/Day 82 - UI.jpg"); }
 
 #day-83 {
-  background: url("../images/Day" + 83 + "-UI.jpg");
-  background: url("../images/Day" + 83 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 83 - UI.jpg");
+  background: url("../images/UIs/Day 83 - UI.jpg"); }
 
 #day-84 {
-  background: url("../images/Day" + 84 + "-UI.jpg");
-  background: url("../images/Day" + 84 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 84 - UI.jpg");
+  background: url("../images/UIs/Day 84 - UI.jpg"); }
 
 #day-85 {
-  background: url("../images/Day" + 85 + "-UI.jpg");
-  background: url("../images/Day" + 85 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 85 - UI.jpg");
+  background: url("../images/UIs/Day 85 - UI.jpg"); }
 
 #day-86 {
-  background: url("../images/Day" + 86 + "-UI.jpg");
-  background: url("../images/Day" + 86 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 86 - UI.jpg");
+  background: url("../images/UIs/Day 86 - UI.jpg"); }
 
 #day-87 {
-  background: url("../images/Day" + 87 + "-UI.jpg");
-  background: url("../images/Day" + 87 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 87 - UI.jpg");
+  background: url("../images/UIs/Day 87 - UI.jpg"); }
 
 #day-88 {
-  background: url("../images/Day" + 88 + "-UI.jpg");
-  background: url("../images/Day" + 88 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 88 - UI.jpg");
+  background: url("../images/UIs/Day 88 - UI.jpg"); }
 
 #day-89 {
-  background: url("../images/Day" + 89 + "-UI.jpg");
-  background: url("../images/Day" + 89 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 89 - UI.jpg");
+  background: url("../images/UIs/Day 89 - UI.jpg"); }
 
 #day-90 {
-  background: url("../images/Day" + 90 + "-UI.jpg");
-  background: url("../images/Day" + 90 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 90 - UI.jpg");
+  background: url("../images/UIs/Day 90 - UI.jpg"); }
 
 #day-91 {
-  background: url("../images/Day" + 91 + "-UI.jpg");
-  background: url("../images/Day" + 91 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 91 - UI.jpg");
+  background: url("../images/UIs/Day 91 - UI.jpg"); }
 
 #day-92 {
-  background: url("../images/Day" + 92 + "-UI.jpg");
-  background: url("../images/Day" + 92 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 92 - UI.jpg");
+  background: url("../images/UIs/Day 92 - UI.jpg"); }
 
 #day-93 {
-  background: url("../images/Day" + 93 + "-UI.jpg");
-  background: url("../images/Day" + 93 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 93 - UI.jpg");
+  background: url("../images/UIs/Day 93 - UI.jpg"); }
 
 #day-94 {
-  background: url("../images/Day" + 94 + "-UI.jpg");
-  background: url("../images/Day" + 94 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 94 - UI.jpg");
+  background: url("../images/UIs/Day 94 - UI.jpg"); }
 
 #day-95 {
-  background: url("../images/Day" + 95 + "-UI.jpg");
-  background: url("../images/Day" + 95 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 95 - UI.jpg");
+  background: url("../images/UIs/Day 95 - UI.jpg"); }
 
 #day-96 {
-  background: url("../images/Day" + 96 + "-UI.jpg");
-  background: url("../images/Day" + 96 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 96 - UI.jpg");
+  background: url("../images/UIs/Day 96 - UI.jpg"); }
 
 #day-97 {
-  background: url("../images/Day" + 97 + "-UI.jpg");
-  background: url("../images/Day" + 97 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 97 - UI.jpg");
+  background: url("../images/UIs/Day 97 - UI.jpg"); }
 
 #day-98 {
-  background: url("../images/Day" + 98 + "-UI.jpg");
-  background: url("../images/Day" + 98 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 98 - UI.jpg");
+  background: url("../images/UIs/Day 98 - UI.jpg"); }
 
 #day-99 {
-  background: url("../images/Day" + 99 + "-UI.jpg");
-  background: url("../images/Day" + 99 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 99 - UI.jpg");
+  background: url("../images/UIs/Day 99 - UI.jpg"); }
 
 #day-100 {
-  background: url("../images/Day" + 100 + "-UI.jpg");
-  background: url("../images/Day" + 100 + "-UI.jpg"); }
+  background: url("../images/UIs/Day 100 - UI.jpg");
+  background: url("../images/UIs/Day 100 - UI.jpg"); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 @for $i from 1 through 100 {
     #day-#{$i} {
-		@include background(url("../images/Day" + #{$i} + "-UI.jpg"));
+		@include background(url("../images/UIs/Day #{$i} - UI.jpg"));
     }
 }
