@@ -1,5 +1,20 @@
 var UIs = [
-	{ day: 1, title: 'Messaging App', tags: 'app, calculator, ios' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
+	{ day: 1, title: 'Messaging App', tags: 'app, messaging' },
 ];
 
 var RepeatModule = React.createClass({
@@ -16,7 +31,7 @@ var RepeatModule = React.createClass({
 						<div className="visible-container">
 							<div className="vertical-center">
 								<h1 className="name">{ui.title}</h1>
-								<h5 className="tags">{ui.tags}</h5>
+								<h5 className="tags"><span>{ui.tags}</span></h5>
 								<button className="view">View Work <span className="arrow"></span></button>
 							</div>
 						</div>

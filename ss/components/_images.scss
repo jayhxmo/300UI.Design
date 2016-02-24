@@ -1,0 +1,5 @@
+@for $i from 1 through 92 {
+    #day-#{$i} {
+		@include background(url("../images/day1.jpg"));
+    }
+}

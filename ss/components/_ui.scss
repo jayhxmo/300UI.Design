@@ -20,7 +20,7 @@
 		opacity: 0;
 		text-align: center;
 
-		@include transition(all $animation-duration $animation-timing);
+		@extend %transition;
 	}
 
 	&:hover {
@@ -61,7 +61,7 @@
 	border-radius: 50%;
 	line-height: em(54px);
 
-	@include transition(all $animation-duration $animation-timing);
+	@extend %transition;
 }
 
 .vertical-center {
@@ -83,33 +83,25 @@
 
 
 button.view {
-	display: inline-block;
-	@include margin(5vh auto 0);
-
-	@include transition(all $animation-duration $animation-timing);
+	@include margin(3vh auto 0);
+	@extend %transition;
 
 	span.arrow {
 		display: inline-block;
-	    width: em(20px);
-	    height: em(11px);
+		@include size(em(20px) em(11px));
 		@include margin(0 0 0 em(-20px));
 
 		background: url('../images/arrow.svg') no-repeat;
 		background-position: em(-20px) center;
 	    background-size: cover;
+
 	    content: "";
 		opacity: 0;
 
-
-		@include transition(all $animation-duration $animation-timing);
+		@extend %transition;
 		transition-delay: 300ms;
 	}
 }
-
-#day-1 {
-	@include background(url("../images/day1.jpg"));
-}
-
 
 .social {
 	a {

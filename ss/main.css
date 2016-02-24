@@ -176,6 +176,12 @@ table {
                                           
 *****************************************************************
 ****************************************************************/
+.UI .visible-container, .day, button.view, button.view span.arrow {
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  transition: all 175ms ease;
+  -webkit-backface-visibility: hidden; }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -333,10 +339,7 @@ html {
     background: rgba(0, 0, 0, 0.33);
     color: #fdfdfd;
     opacity: 0;
-    text-align: center;
-    -webkit-transition: all 175ms ease;
-    -moz-transition: all 175ms ease;
-    transition: all 175ms ease; }
+    text-align: center; }
   .UI:hover .visible-container {
     opacity: 1; }
     .UI:hover .visible-container .view span.arrow {
@@ -366,10 +369,7 @@ html {
   font-weight: 600;
   text-align: center;
   border-radius: 50%;
-  line-height: 3.375em;
-  -webkit-transition: all 175ms ease;
-  -moz-transition: all 175ms ease;
-  transition: all 175ms ease; }
+  line-height: 3.375em; }
 
 .vertical-center {
   margin: 0;
@@ -390,29 +390,18 @@ html {
     font-style: italics; }
 
 button.view {
-  display: inline-block;
-  margin: 5vh auto 0;
-  -webkit-transition: all 175ms ease;
-  -moz-transition: all 175ms ease;
-  transition: all 175ms ease; }
+  margin: 3vh auto 0; }
   button.view span.arrow {
     display: inline-block;
-    width: 1.25em;
     height: 0.6875em;
+    width: 1.25em;
     margin: 0 0 0 -1.25em;
     background: url("../images/arrow.svg") no-repeat;
     background-position: -1.25em center;
     background-size: cover;
     content: "";
     opacity: 0;
-    -webkit-transition: all 175ms ease;
-    -moz-transition: all 175ms ease;
-    transition: all 175ms ease;
     transition-delay: 300ms; }
-
-#day-1 {
-  background: url("../images/day1.jpg");
-  background: url("../images/day1.jpg"); }
 
 .social a {
   color: #fdfdfd; }
@@ -424,5 +413,373 @@ button.view {
     border: 2px solid #fdfdfd;
     border-radius: 2.25em;
     line-height: 2.25em; }
+
+#day-1 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-2 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-3 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-4 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-5 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-6 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-7 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-8 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-9 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-10 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-11 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-12 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-13 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-14 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-15 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-16 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-17 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-18 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-19 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-20 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-21 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-22 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-23 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-24 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-25 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-26 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-27 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-28 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-29 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-30 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-31 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-32 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-33 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-34 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-35 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-36 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-37 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-38 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-39 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-40 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-41 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-42 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-43 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-44 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-45 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-46 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-47 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-48 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-49 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-50 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-51 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-52 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-53 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-54 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-55 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-56 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-57 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-58 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-59 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-60 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-61 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-62 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-63 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-64 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-65 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-66 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-67 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-68 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-69 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-70 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-71 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-72 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-73 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-74 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-75 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-76 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-77 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-78 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-79 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-80 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-81 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-82 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-83 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-84 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-85 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-86 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-87 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-88 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-89 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-90 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-91 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
+
+#day-92 {
+  background: url("../images/day1.jpg");
+  background: url("../images/day1.jpg"); }
 
 /*# sourceMappingURL=main.css.map */
