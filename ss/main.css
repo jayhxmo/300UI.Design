@@ -271,8 +271,6 @@ button {
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease; }
-  button:hover {
-    background-color: #f0f0f0; }
 
 input {
   height: 3.4375em;
@@ -348,6 +346,7 @@ html {
         background-position: right center;
         opacity: 1; }
   .UI:hover .day {
+    cursor: pointer;
     opacity: 0; }
 
 .day {

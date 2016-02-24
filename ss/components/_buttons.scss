@@ -15,18 +15,5 @@ button {
 
 	@include transition(all $animation-duration $animation-timing);
 
-	&:hover { background-color: shade($color-white, 5%); }
-
-	// &:after {
-	// 	    opacity: 1;
-	// 	    position: absolute;
-	// 	    top: 50%;
-	// 	    height: 10px;
-	// 	    width: 6px;
-	// 	    right: 20px;
-	// 	    margin-top: -5px;
-	// 	    content: "";
-	// 	    background: url('../images/arrow.png') no-repeat right center;
-	// 	    background-size: 6px 10px
-	// }
+	// &:hover { background-color: shade($color-white, 5%); }
 }
