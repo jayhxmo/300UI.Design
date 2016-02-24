@@ -388,21 +388,6 @@ html {
     margin: 0 auto;
     color: #eee;
     font-style: italics; }
-    .vertical-center h5.tags span.tag {
-      margin: 0 0.3125em; }
-      .vertical-center h5.tags span.tag:before {
-        content: '#'; }
-
-.social a {
-  color: #fdfdfd; }
-  .social a i {
-    display: inline-block;
-    height: 2.25em;
-    width: 2.25em;
-    font-size: 1.125em;
-    border: 2px solid #fdfdfd;
-    border-radius: 2.25em;
-    line-height: 2.25em; }
 
 button.view {
   display: inline-block;
@@ -428,5 +413,16 @@ button.view {
 #day-1 {
   background: url("../images/day1.jpg");
   background: url("../images/day1.jpg"); }
+
+.social a {
+  color: #fdfdfd; }
+  .social a i {
+    display: inline-block;
+    height: 2.25em;
+    width: 2.25em;
+    font-size: 1.125em;
+    border: 2px solid #fdfdfd;
+    border-radius: 2.25em;
+    line-height: 2.25em; }
 
 /*# sourceMappingURL=main.css.map */

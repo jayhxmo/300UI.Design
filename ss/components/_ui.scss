@@ -78,31 +78,9 @@
 		@include margin(0 auto);
 		color: $color-gallery;
 		font-style: italics;
-
-		span.tag {
-			@include margin(0 em(5px));
-
-			&:before {
-				content: '#';
-			}
-		}
 	}
 }
 
-.social {
-	a {
-		color: $color-white;
-
-		i {
-			display: inline-block;
-			@include size(em(36px));
-			font-size: em(18px);
-			border: 2px solid $color-white;
-			border-radius: em(36px);
-			line-height: em(36px);
-		}
-	}
-}
 
 button.view {
 	display: inline-block;
@@ -130,4 +108,20 @@ button.view {
 
 #day-1 {
 	@include background(url("../images/day1.jpg"));
+}
+
+
+.social {
+	a {
+		color: $color-white;
+
+		i {
+			display: inline-block;
+			@include size(em(36px));
+			font-size: em(18px);
+			border: 2px solid $color-white;
+			border-radius: em(36px);
+			line-height: em(36px);
+		}
+	}
 }

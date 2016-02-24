@@ -16,11 +16,7 @@ var RepeatModule = React.createClass({
 						<div className="visible-container">
 							<div className="vertical-center">
 								<h1 className="name">{ui.title}</h1>
-								<h5 className="tags">
-									<span className="tag">app</span>
-									<span className="tag">calculator</span>
-									<span className="tag">ios</span>
-								</h5>
+								<h5 className="tags">{ui.tags}</h5>
 								<button className="view">View Work <span className="arrow"></span></button>
 							</div>
 						</div>
