@@ -47,11 +47,11 @@ $color-dodgerblue: #229aff;
 *****************************************************************
 ****************************************************************/
 // Typography
-$body-font: sans-serif;
-$title-font: sans-serif;;
+$body-font: "proxima-nova", "Helvetica", "Arial", sans-serif;
+$title-font: $body-font;
 $font-sizes: 48px 36px 24px 18px 16px 12px;
 $em-base: 16px !default;
-$default-font-weight: 400;
+$default-font-weight: 600;
 
 // Line Height
 $body-lh: 1.25;

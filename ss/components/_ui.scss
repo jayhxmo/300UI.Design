@@ -1,5 +1,5 @@
 .UI {
-	@include span-columns(3);
+	@include span-columns(4);
 	height: 15vw;
 	
 	@include margin(0);
@@ -12,8 +12,8 @@
 	.visible-container {
 		@include size(100% 100%);
 		@include margin(0);
-		@include padding(em(15px));
-		
+		@include padding(0);
+
 		background: rgba(0, 0, 0, 0.33);
 		color: $color-white;
 		
@@ -26,33 +26,109 @@
 	&:hover {
 		.visible-container {
 			opacity: 1;
+
+			.view {
+				margin-right: em(5px);
+				
+				span {
+					margin-left: em(5px);
+					background-position: right center;
+					opacity: 1;
+				}
+			}
+		}
+
+		.day {
+			opacity: 0;
 		}
 	}
 }
 
 .day {
-	@include size(em(36px));
+	@include position(absolute, em(10px) 0 0 em(10px));
+	z-index: 10;
+	
+	@include size(em(54px));
 	@include margin(0);
 	@include padding(0);
-	@include background(rgba(255, 255, 255, 0.33));
-	font-size: em(24px);
+
+	@include background(rgba(0, 0, 0, 0.33));
+	color: $color-white;
+
+	font-family: $body-font;
+	@include font-sw(em(20px), 600);
+	text-align: center;
+
 	border-radius: 50%;
-	line-height: em(36px);
+	line-height: em(54px);
+
+	@include transition(all $animation-duration $animation-timing);
 }
 
 .vertical-center {
 	@include margin(0);
 	@include padding(em(15px));
+	@include vertical-center;
 
-	h2.name {
-		@include margin(0 auto em(5px));
+	h1.name {
+		@include margin(0 auto em(2px));
+		font-size: em(36px);
 	}
 
-	p {
+	h5.tags {
 		@include margin(0 auto);
 		color: $color-gallery;
+		font-style: italics;
+
+		span.tag {
+			@include margin(0 em(5px));
+
+			&:before {
+				content: '#';
+			}
+		}
 	}
 }
+
+.social {
+	a {
+		color: $color-white;
+
+		i {
+			display: inline-block;
+			@include size(em(36px));
+			font-size: em(18px);
+			border: 2px solid $color-white;
+			border-radius: em(36px);
+			line-height: em(36px);
+		}
+	}
+}
+
+button.view {
+	display: inline-block;
+	@include margin(5vh em(-20px) 0 auto);
+
+	@include transition(all $animation-duration $animation-timing);
+
+	span {
+		display: inline-block;
+	    width: em(20px);
+	    height: em(11px);
+		@include margin(0 0 0 em(-20px));
+
+		background: url('../images/arrow.svg') no-repeat;
+		background-position: em(-20px) center;
+	    background-size: cover;
+	    content: "";
+		opacity: 0;
+
+
+		@include transition(all $animation-duration $animation-timing);
+		transition-delay: 300ms;
+	}
+}
+
 #day-1 {
 	@include background(url("../images/day1.jpg"));
 }
