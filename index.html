@@ -11,6 +11,16 @@
 
         <script src="https://use.typekit.net/dhf4pqf.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<style>
+		.white-popup {
+		  position: relative;
+		  background: #FFF;
+		  padding: 20px;
+		  width:auto;
+		  max-width: 500px;
+		  margin: 20px auto;
+		}
+</style>
 	</head>
 	<body>
 		<!-- <div class="social">
@@ -24,27 +34,24 @@
 				<i class="fa fa-github"></i>
 			</a>
 		</div> -->
-		<div id="open">
-			<ul>
-				<li><a href="images/UIs/Day 1 - UI.jpg">1</a></li>
-				<li><a href="images/UIs/Day 2 - UI.jpg">2</a></li>
-				<li><a href="images/UIs/Day 3 - UI.jpg">3</a></li>
-			</ul>
+		<div class="main">
+			<button id="sup">popup</button>
 		</div>
 
-		<div id="react-content"></div>
+		<main id="main"></main>
 
 		<!-- jQuery.js -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 		<script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
-		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
 		
 		<!-- React.js -->
         <script src="js/react.min.js"></script>
         <script src="js/react-dom.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
         <script type="text/babel" src="js/render.js"></script>
+        
+		<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>

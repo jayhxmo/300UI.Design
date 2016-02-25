@@ -110,7 +110,7 @@ var RepeatModule = React.createClass({
 		var listUIs = this.props.UIs.map(function(ui) {
 			return (
 				<div className='UI' id={'day-' + ui.day}>
-					<a href={'images/UIs/Day ' + ui.day + ' - UI.jpg'} id={'UI-' + ui.day}>
+					<a href='#' className='popup-iframe mfp-iframe' id={'UI-' + ui.day}>
 						<div className="day">{ui.day}</div>
 						<div className="visible-container">
 							<div className="vertical-center">
@@ -125,13 +125,14 @@ var RepeatModule = React.createClass({
 		});
 
 		return (
-			<div className='ui-container'>
+			<div id='ui-container'>
 				{listUIs}
 			</div>
 		);
 	}
 });
 
-ReactDOM.render(<RepeatModule UIs={UIs} />, 				
-	document.getElementById('react-content'));
+ReactDOM.render(<RepeatModule UIs={UIs} />, document.querySelector('main'));
 
+// data-mfp-src='shot.html?day=51'
+// {'images/UIs/Day ' + ui.day + ' - UI.jpg'}
