@@ -118,18 +118,3 @@ button.view {
 		transition-delay: 300ms;
 	}
 }
-
-.social {
-	a {
-		color: $color-white;
-
-		i {
-			display: inline-block;
-			@include size(em(36px));
-			font-size: em(18px);
-			border: 2px solid $color-white;
-			border-radius: em(36px);
-			line-height: em(36px);
-		}
-	}
-}

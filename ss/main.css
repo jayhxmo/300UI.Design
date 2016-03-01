@@ -177,7 +177,7 @@ table {
                                           
 *****************************************************************
 ****************************************************************/
-.UI .visible-container, .day, button.view, button.view span.arrow {
+.intro img.me, .UI .visible-container, .day, button.view, button.view span.arrow {
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease;
@@ -322,6 +322,64 @@ html {
     content: "";
     display: table; }
 
+.intro {
+  padding: 3.125em 0;
+  text-align: center; }
+  .intro img.me {
+    height: 9.375em;
+    width: 9.375em;
+    margin: 0 auto 0.9375em;
+    border-radius: 50%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); }
+    .intro img.me:hover {
+      margin: -0.3125em auto 1.25em;
+      box-shadow: 0 22px 50px rgba(0, 0, 0, 0.33); }
+  .intro h1#title {
+    margin: 0; }
+  .intro p {
+    width: 33.75em;
+    max-width: 90%;
+    margin: 0.625em auto 0;
+    color: #777; }
+
+.social {
+  width: 100%;
+  margin: 0.9375em auto 0 -1.0625em;
+  text-align: center;
+  list-style: none; }
+  .social li {
+    display: inline-block;
+    margin: 0 0.625em;
+    color: #555; }
+  .social i {
+    display: inline-block;
+    height: 2.25em;
+    width: 2.25em;
+    font-size: 1.375em;
+    line-height: 2.25em; }
+  .social a {
+    position: relative;
+    display: inline-block;
+    color: #555 !important; }
+    .social a::before {
+      position: absolute;
+      z-index: 999;
+      left: -80%;
+      bottom: 9999px;
+      height: 3.125em;
+      line-height: 3.125em;
+      padding: 0 0.75em;
+      background: #1d1d1d;
+      color: #fdfdfd;
+      font-size: 0.75em;
+      content: attr(data-tip);
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.4s ease-out; }
+    .social a:hover::before {
+      opacity: 1;
+      bottom: -3.125em; }
+
 .UI {
   position: relative;
   float: left;
@@ -434,17 +492,6 @@ button.view {
     content: "";
     opacity: 0;
     transition-delay: 300ms; }
-
-.social a {
-  color: #fdfdfd; }
-  .social a i {
-    display: inline-block;
-    height: 2.25em;
-    width: 2.25em;
-    font-size: 1.125em;
-    border: 2px solid #fdfdfd;
-    border-radius: 2.25em;
-    line-height: 2.25em; }
 
 #day-1 {
   background: url("../images/UIs/Day 1 - UI.jpg");
