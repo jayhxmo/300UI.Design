@@ -1,0 +1,13 @@
+.featherlight-content {
+	width: 100%;
+	@include padding(0);
+
+	.img-container {
+		width: 100%;
+		@include padding(0);
+
+		img {
+			width: 100%;
+		}
+	}
+}

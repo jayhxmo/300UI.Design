@@ -108,11 +108,20 @@ var RepeatModule = React.createClass({
 				'<head>' +
 				'</head>' +
 				'<body>' +
-					// '<img class=\"showcase\" src=\"images/UIs/Day ' + day + ' - UI.jpg\">' +
-					'<a href=\"downloads/UIs/Day ' + day + '.zip>Download for Free</a>' +
+					'<div class=\"img-container\">' +
+						'<img class=\"showcase\" src=\"images/UIs/Day 15 - UI.jpg\">' +
+					'</div>' +
+					'<div class=\"info\">' +
+						'<h4 class=\"credits\">Designed by <a href=\"http://dribbble.com/jayhxmo\">Jay Mo</a></h4>' +
+						'<h2 class="title">Day 15 - Calculator</h2>' +
+						'<h5 class="tags">ios, app, elegant</h5>' +
+						'<a href=\"downloads/UIs/Day ' + day + '.zip>Download for Free</a>' +
+					'</div>' +
 				'</body>' +
 			'</html>',
-			{'jquery/image/html/ajax/text': 'html'}
+			{
+				'jquery/image/html/ajax/text': 'html'
+			}
 		);
 	},
 	getInitialState: function() {
