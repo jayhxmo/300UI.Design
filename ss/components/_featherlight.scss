@@ -23,13 +23,9 @@
 		/* styling */
 		cursor: pointer;
 		background: #333;
+
 		/* IE8 "hack" for nested featherlights */
 		background: rgba(0, 0, 0, 0);
-	}
-
-	/* support for nested featherlights. Does not work in IE8 (use JS to fix) */
-	.featherlight:last-of-type {
-		background: rgba(0, 0, 0, 0.8);
 	}
 
 	.featherlight:before {
@@ -45,8 +41,6 @@
 		/* make content container for positioned elements (close button) */
 		width: 60%;
 
-		position: relative;
-
 		/* position: centering vertical and horizontal */
 		text-align: left;
 		vertical-align: middle;
@@ -55,18 +49,22 @@
 		/* dimensions: cut off images */
 		overflow: auto;
 		padding: 0;
-		border-bottom: 25px solid transparent;
 
 		/* dimensions: handling large content */
 		margin-left: 5%;
 		margin-right: 5%;
+		max-height: 90%;
 
 		/* styling */
-		background: #fff;
+		background: none;
 		cursor: auto;
 
 		/* reset white-space wrapping */
 		white-space: normal;
+	}
+
+	.featherlight:last-of-type {
+		background: rgba(0, 0, 0, 0.85);
 	}
 
 	/* contains the content */
@@ -79,8 +77,8 @@
 		/* position: centering vertical and horizontal */
 		position: absolute;
 		z-index: 9999;
-		top: 0;
-		right: 0;
+		top: 15px;
+		right: 20%;
 
 		/* dimensions: 25px x 25px */
 		line-height: 25px;
@@ -90,9 +88,8 @@
 		cursor: pointer;
 		text-align: center;
 		font-family: Arial, sans-serif;
-		background: #fff; /* Set the background in case it overlaps the content */
-		background: rgba(255, 255, 255, 0.3);
-		color: #000;
+		background: none;
+		color: #ccc;
 	}
 
 
@@ -101,16 +98,18 @@
 		width: 100%;
 	}
 
-
-	.featherlight-iframe .featherlight-content {
-		/* removed the border for image croping since iframe is edge to edge */
-		border-bottom: 0;
-		padding: 0;
-	}
-
 	.featherlight iframe {
 		/* styling */
 		border: none;
+	}
+}
+
+.img-container {
+	width: 100%;
+	@include padding(0);
+
+	img {
+		width: 100%;
 	}
 }
 
@@ -122,7 +121,7 @@
 		margin-right: 10px;
 		max-height: 98%;
 
-		padding: 10px 10px 0;
+		padding: 0;
 		border-bottom: 10px solid transparent;
 	}
 }

@@ -280,20 +280,23 @@ button {
   transition: all 175ms ease; }
 
 input {
-  height: 3.4375em;
-  width: 30em;
-  margin: 0 auto;
-  padding: 0 auto;
+  height: 3.125em;
+  width: 21.875em;
+  margin: 0 0.9375em 0 0;
+  padding: 0.4375em 1.5625em;
   color: #1d1d1d;
   background-color: #fdfdfd;
-  border: 0;
-  border-radius: 1px;
+  border: 3px solid #eee;
+  border-radius: 21.875em;
   font: normal normal 600 0.29091 "proxima-nova", "Helvetica", "Arial", sans-serif;
   text-align: left;
   outline: none;
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease; }
+  input:focus {
+    border: 3px solid #fdfdfd;
+    box-shadow: 0 0.3125em 1.875em #aaa; }
 
 html {
   box-sizing: border-box; }
@@ -871,10 +874,6 @@ button.view {
     /* IE8 "hack" for nested featherlights */
     background: transparent; }
 
-  /* support for nested featherlights. Does not work in IE8 (use JS to fix) */
-  .featherlight:last-of-type {
-    background: rgba(0, 0, 0, 0.8); }
-
   .featherlight:before {
     /* position: trick to center content vertically */
     content: '';
@@ -886,7 +885,6 @@ button.view {
   .featherlight .featherlight-content {
     /* make content container for positioned elements (close button) */
     width: 60%;
-    position: relative;
     /* position: centering vertical and horizontal */
     text-align: left;
     vertical-align: middle;
@@ -894,15 +892,18 @@ button.view {
     /* dimensions: cut off images */
     overflow: auto;
     padding: 0;
-    border-bottom: 25px solid transparent;
     /* dimensions: handling large content */
     margin-left: 5%;
     margin-right: 5%;
+    max-height: 90%;
     /* styling */
-    background: #fff;
+    background: none;
     cursor: auto;
     /* reset white-space wrapping */
     white-space: normal; }
+
+  .featherlight:last-of-type {
+    background: rgba(0, 0, 0, 0.85); }
 
   /* contains the content */
   .featherlight .featherlight-inner {
@@ -913,8 +914,8 @@ button.view {
     /* position: centering vertical and horizontal */
     position: absolute;
     z-index: 9999;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 20%;
     /* dimensions: 25px x 25px */
     line-height: 25px;
     width: 25px;
@@ -922,23 +923,22 @@ button.view {
     cursor: pointer;
     text-align: center;
     font-family: Arial, sans-serif;
-    background: #fff;
-    /* Set the background in case it overlaps the content */
-    background: rgba(255, 255, 255, 0.3);
-    color: #000; }
+    background: none;
+    color: #ccc; }
 
   .featherlight .featherlight-image {
     /* styling */
     width: 100%; }
 
-  .featherlight-iframe .featherlight-content {
-    /* removed the border for image croping since iframe is edge to edge */
-    border-bottom: 0;
-    padding: 0; }
-
   .featherlight iframe {
     /* styling */
     border: none; } }
+.img-container {
+  width: 100%;
+  padding: 0; }
+  .img-container img {
+    width: 100%; }
+
 /* handling phones and small screens */
 @media only screen and (max-width: 1024px) {
   .featherlight .featherlight-content {
@@ -946,15 +946,37 @@ button.view {
     margin-left: 10px;
     margin-right: 10px;
     max-height: 98%;
-    padding: 10px 10px 0;
+    padding: 0;
     border-bottom: 10px solid transparent; } }
-.featherlight-content {
-  width: 100%;
-  padding: 0; }
-  .featherlight-content .img-container {
-    width: 100%;
-    padding: 0; }
-    .featherlight-content .img-container img {
-      width: 100%; }
+.info {
+  margin: 1% auto 0;
+  padding: 1.5625em 3.125em;
+  background: #fdfdfd;
+  background: #fdfdfd; }
+  .info h4.credits {
+    margin: 0;
+    color: #555; }
+  .info h2.title {
+    margin: 0.125em 0;
+    font-size: 2em; }
+  .info h5.tags {
+    margin: 0;
+    color: #777; }
+  .info h5.download-info {
+    color: #555; }
+  .info h6.disclaimer {
+    margin: 1.5625em 0 0;
+    color: #aaa; }
+  .info form {
+    margin: 3.125em 0 0; }
+  .info button {
+    background: #229aff;
+    background: #229aff;
+    color: #fdfdfd;
+    box-shadow: 0 0.3125em 1.875em #229aff; }
+    .info button:hover {
+      background: #2c9fff;
+      background: #2c9fff;
+      box-shadow: 0 0.625em 2.5em #229aff; }
 
 /*# sourceMappingURL=main.css.map */

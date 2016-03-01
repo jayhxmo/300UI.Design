@@ -109,13 +109,18 @@ var RepeatModule = React.createClass({
 				'</head>' +
 				'<body>' +
 					'<div class=\"img-container\">' +
-						'<img class=\"showcase\" src=\"images/UIs/Day 15 - UI.jpg\">' +
+						'<img class=\"showcase\" src=\"images/UIs/Day ' + day + ' - UI.jpg\">' +
 					'</div>' +
 					'<div class=\"info\">' +
 						'<h4 class=\"credits\">Designed by <a href=\"http://dribbble.com/jayhxmo\">Jay Mo</a></h4>' +
-						'<h2 class="title">Day 15 - Calculator</h2>' +
+						'<h2 class="title">Day ' + day + ' - ' + UIs[100 - day]['title'] + '</h2>' +
 						'<h5 class="tags">ios, app, elegant</h5>' +
-						'<a href=\"downloads/UIs/Day ' + day + '.zip>Download for Free</a>' +
+						'<form>' +
+							'<h5 class="download-info">Download (ZIP containing PSD) is Sent Via Email</h5>' +
+							'<input type=\"email\" placeholder=\"Email address\">' +
+							'<button>Download</button>' +
+							'<h6 class="disclaimer">Don\'t worry, I hate spam too. There will also be an unsubscribe<br>button in the email if you choose not to get future updates.</h6>' +
+						'</form>' +
 					'</div>' +
 				'</body>' +
 			'</html>',

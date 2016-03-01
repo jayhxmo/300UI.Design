@@ -1,13 +1,43 @@
-.featherlight-content {
-	width: 100%;
-	@include padding(0);
+.info {
+	@include margin(1% auto 0);
+	@include padding(em(25px) em(50px));
+	@include background($color-white);
 
-	.img-container {
-		width: 100%;
-		@include padding(0);
+	h4.credits {
+		@include margin(0);
+		color: $color-emperor;
+	}
 
-		img {
-			width: 100%;
+	h2.title {
+		@include margin(em(2px) 0);
+		font-size: em(32px);
+	}
+
+	h5.tags {
+		@include margin(0);
+		color: $color-boulder;
+	}
+
+	h5.download-info {
+		color: $color-emperor;
+	}
+
+	h6.disclaimer {
+		@include margin(em(25px) 0 0);
+		color: $color-silverchalice;
+	}
+	form {
+		@include margin(em(50px) 0 0);
+	}
+
+	button {
+		@include background($color-dodgerblue);
+		color: $color-white;
+		box-shadow: 0 em(5px) em(30px) $color-dodgerblue;
+
+		&:hover {
+			@include background(lighten($color-dodgerblue, 2%));
+			box-shadow: 0 em(10px) em(40px) $color-dodgerblue;
 		}
 	}
 }
