@@ -112,17 +112,20 @@ var RepeatModule = React.createClass({
 				'<head>' +
 				'</head>' +
 				'<body>' +
-					'<div class=\"img-container\">' +
-						'<img class=\"showcase\" src=\"images/UIs/Day ' + day + ' - UI.jpg\">' +
+					'<div class="img-container">' +
+						'<img class="showcase" src="images/UIs/Day ' + day + ' - UI.jpg">' +
 					'</div>' +
-					'<div class=\"info\">' +
-						'<h4 class=\"credits\">Designed by <a href=\"http://dribbble.com/jayhxmo\">Jay Mo</a></h4>' +
+					'<div class="info">' +
+						'<h4 class="credits">Designed by <a href="http://dribbble.com/jayhxmo">Jay Mo</a></h4>' +
 						'<h2 class="title">Day ' + day + ' - ' + UIs[100 - day]['title'] + '</h2>' +
-						'<h5 class="tags">ios, app, elegant</h5>' +
+						'<h4 class="tags">' + UIs[100 - day]['tags'] + '</h4>' +
+					'</div>' +
+					'<div class="download">' +
 						'<form>' +
 							'<h5 class="download-info">Download (ZIP containing PSD) is Sent Via Email</h5>' +
-							'<input type=\"email\" placeholder=\"Email address\">' +
+							'<input type="email" placeholder="Email address">' +
 							'<button>Download</button>' +
+							'<h5 class="stats">Downloaded: 420 times &middot; Size: 1.4MB</h6>' + 
 							'<h6 class="disclaimer">Don\'t worry, I hate spam too. There will also be an unsubscribe<br>button in the email if you choose not to get future updates.</h6>' +
 						'</form>' +
 					'</div>' +

@@ -1,6 +1,6 @@
 .info {
-	@include margin(1% auto 0);
-	@include padding(em(25px) em(50px));
+	@include margin(1vh auto 0);
+	@include padding(em(25px) 7%);
 	@include background($color-white);
 
 	h4.credits {
@@ -18,7 +18,15 @@
 		color: $color-boulder;
 	}
 
-	h5.download-info {
+}
+
+.download {
+	@include margin(0 auto 10vh);
+	@include padding(em(25px) 7%);
+	@include background($color-gallery);
+	
+	h4.download-info {
+		@include margin(0 em(10px) 0);
 		color: $color-emperor;
 	}
 
@@ -26,9 +34,10 @@
 		@include margin(em(25px) 0 0);
 		color: $color-silverchalice;
 	}
-	
-	form {
-		@include margin(em(50px) 0 0);
+
+	h5.stats {
+		@include margin(em(10px) 0 0);
+		color: $color-dustygray;
 	}
 
 	button {

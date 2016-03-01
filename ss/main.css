@@ -933,8 +933,8 @@ button.view {
     padding: 0;
     border-bottom: 10px solid transparent; } }
 .info {
-  margin: 1% auto 0;
-  padding: 1.5625em 3.125em;
+  margin: 1vh auto 0;
+  padding: 1.5625em 7%;
   background: #fdfdfd;
   background: #fdfdfd; }
   .info h4.credits {
@@ -946,19 +946,27 @@ button.view {
   .info h5.tags {
     margin: 0;
     color: #777; }
-  .info h5.download-info {
+
+.download {
+  margin: 0 auto 10vh;
+  padding: 1.5625em 7%;
+  background: #eee;
+  background: #eee; }
+  .download h4.download-info {
+    margin: 0 0.625em;
     color: #555; }
-  .info h6.disclaimer {
+  .download h6.disclaimer {
     margin: 1.5625em 0 0;
     color: #aaa; }
-  .info form {
-    margin: 3.125em 0 0; }
-  .info button {
+  .download h5.stats {
+    margin: 0.625em 0 0;
+    color: #999; }
+  .download button {
     background: #229aff;
     background: #229aff;
     color: #fdfdfd;
     box-shadow: 0 0.3125em 1.875em #229aff; }
-    .info button:hover {
+    .download button:hover {
       background: #2c9fff;
       background: #2c9fff;
       box-shadow: 0 0.625em 2.5em #229aff; }
