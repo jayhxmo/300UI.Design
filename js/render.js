@@ -103,6 +103,18 @@ var UIs = [
 
 var RepeatModule = React.createClass({
 	openModal: function(day) {
+		if ($('html').css('overflow') == 'hidden') {
+			var s = $('html').scrollTop();    
+			$('html').css('overflow', 'auto');
+			$('html').scrollTop(s);
+		}
+
+		else {
+			var s = $('html').scrollTop();    
+			$('html').css('overflow', 'hidden');
+			$('html').scrollTop(s);	
+		}
+
 		$.featherlight(
 			'<html>' +
 				'<head>' +
