@@ -102,21 +102,34 @@ var UIs = [
 ];
 
 var RepeatModule = React.createClass({
+	openModal: function(day) {
+		$.featherlight(
+			'<html>' +
+				'<head>' +
+				'</head>' +
+				'<body>' +
+					// '<img class=\"showcase\" src=\"images/UIs/Day ' + day + ' - UI.jpg\">' +
+					'<a href=\"downloads/UIs/Day ' + day + '.zip>Download for Free</a>' +
+				'</body>' +
+			'</html>',
+			{'jquery/image/html/ajax/text': 'html'}
+		);
+	},
 	getInitialState: function() {
 		return { UIs: [] }
 	},
 	render: function() {
-
-		var listUIs = this.props.UIs.map(function(ui) {
+		var _this = this,
+		listUIs = this.props.UIs.map(function(ui) {
 			return (
 				<div className='UI' id={'day-' + ui.day}>
-					<a href='#' className='popup-iframe mfp-iframe' id={'UI-' + ui.day}>
-						<div className="day">{ui.day}</div>
-						<div className="visible-container">
-							<div className="vertical-center">
-								<h1 className="name">{ui.title}</h1>
-								<h5 className="tags"><span>{ui.tags}</span></h5>
-								<button className="view">View Work <span className="arrow"></span></button>
+					<a href='#' id={'UI-' + ui.day} onClick={_this.openModal.bind(null, ui.day)}>
+						<div className='day'>{ui.day}</div>
+						<div className='visible-container'>
+							<div className='vertical-center'>
+								<h1 className='name'>{ui.title}</h1>
+								<h5 className='tags'><span>{ui.tags}</span></h5>
+								<button className='view'>View Work <span className='arrow'></span></button>
 							</div>
 						</div>
 					</a>
