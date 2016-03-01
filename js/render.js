@@ -103,17 +103,9 @@ var UIs = [
 
 var RepeatModule = React.createClass({
 	openModal: function(day) {
-		if ($('html').css('overflow') == 'hidden') {
-			var s = $('html').scrollTop();    
-			$('html').css('overflow', 'auto');
-			$('html').scrollTop(s);
-		}
-
-		else {
-			var s = $('html').scrollTop();    
-			$('html').css('overflow', 'hidden');
-			$('html').scrollTop(s);	
-		}
+		var s = $('html').scrollTop();    
+		$('html').css('overflow', 'hidden');
+		$('html').scrollTop(s);	
 
 		$.featherlight(
 			'<html>' +
@@ -140,8 +132,11 @@ var RepeatModule = React.createClass({
 				'jquery/image/html/ajax/text': 'html',
 			}
 		);
-
+		
 		$.featherlight.defaults.afterClose = function() {
+			var s = $('html').scrollTop();    
+			$('html').css('overflow', 'auto');
+			$('html').scrollTop(s);
 			$(this).remove();
 		};
 
