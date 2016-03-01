@@ -38,47 +38,33 @@
 	}
 
 	.featherlight .featherlight-content {
-		/* make content container for positioned elements (close button) */
-		width: 60%;
+		position: relative;
+		@include size(100% 100%);
+		@include padding(0 20%);
+		@include background(none);
 
-		/* position: centering vertical and horizontal */
-		text-align: left;
-		vertical-align: middle;
 		display: inline-block;
+		vertical-align: middle;
 
-		/* dimensions: cut off images */
+		text-align: left;
 		overflow: auto;
-		padding: 0;
-
-		/* dimensions: handling large content */
-		margin-left: 5%;
-		margin-right: 5%;
-		max-height: 90%;
-
-		/* styling */
-		background: none;
-		cursor: auto;
-
-		/* reset white-space wrapping */
 		white-space: normal;
+		cursor: default;
 	}
 
 	.featherlight:last-of-type {
 		background: rgba(0, 0, 0, 0.85);
 	}
 
-	/* contains the content */
-	.featherlight .featherlight-inner {
-		/* make sure its visible */
+	.featherlight-inner {
 		display: block;
 	}
 
-	.featherlight .featherlight-close-icon {
-		/* position: centering vertical and horizontal */
+	.featherlight-close-icon {
 		position: absolute;
 		z-index: 9999;
-		top: 15px;
-		right: 20%;
+		top: 5vh;
+		right: calc(20% - 25px);
 
 		/* dimensions: 25px x 25px */
 		line-height: 25px;
@@ -93,23 +79,15 @@
 	}
 
 
-	.featherlight .featherlight-image {
-		/* styling */
-		width: 100%;
-	}
-
-	.featherlight iframe {
-		/* styling */
-		border: none;
-	}
 }
 
 .img-container {
 	width: 100%;
 	@include padding(0);
 
-	img {
+	.showcase {
 		width: 100%;
+		margin-top: 10vh;
 	}
 }
 

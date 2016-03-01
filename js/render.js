@@ -137,9 +137,18 @@ var RepeatModule = React.createClass({
 				'</body>' +
 			'</html>',
 			{
-				'jquery/image/html/ajax/text': 'html'
+				'jquery/image/html/ajax/text': 'html',
 			}
 		);
+
+		$.featherlight.defaults.afterClose = function() {
+			$(this).remove();
+		};
+
+		$('.featherlight-content').addClass('featherlight-close');
+		$('.featherlight-content div').click(function(e) {
+        	e.stopPropagation();
+   		});
 	},
 	getInitialState: function() {
 		return { UIs: [] }
