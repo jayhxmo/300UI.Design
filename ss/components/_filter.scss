@@ -1,0 +1,32 @@
+.filter {
+	@include size(100% em(75px));
+	@include background($color-gallery);
+	line-height: em(75px);
+	text-align: center;
+
+	ul {
+		list-style: none;
+
+		li {
+			display: inline-block;
+			@include margin(0 em(15px));
+
+			color: $color-boulder;
+			font-size: em(24px);
+
+			cursor: pointer;
+
+			@extend %transition;
+
+			&:hover {
+				color: $color-black;
+			}
+			
+			&.active {
+				color: $color-black;
+				text-decoration: underline;
+			}
+
+		}
+	}
+}

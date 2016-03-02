@@ -1,5 +1,5 @@
 .intro {
-	@include padding(em(50px) 0);
+	@include padding(em(50px) 0 em(30px));
 	text-align: center;
 
 	img.me {

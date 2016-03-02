@@ -177,7 +177,7 @@ table {
                                           
 *****************************************************************
 ****************************************************************/
-.intro img.me, .UI .visible-container, .day, button.view, button.view span.arrow, .fab, .fab a {
+.intro img.me, .filter ul li, .UI .visible-container, .day, button.view, button.view span.arrow, .fab, .fab a {
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease;
@@ -323,7 +323,7 @@ html {
     display: table; }
 
 .intro {
-  padding: 3.125em 0;
+  padding: 3.125em 0 1.875em;
   text-align: center; }
   .intro img.me {
     height: 9.375em;
@@ -379,6 +379,27 @@ html {
     .social a:hover::before {
       opacity: 1;
       bottom: -3.125em; }
+
+.filter {
+  height: 4.6875em;
+  width: 100%;
+  background: #eee;
+  background: #eee;
+  line-height: 4.6875em;
+  text-align: center; }
+  .filter ul {
+    list-style: none; }
+    .filter ul li {
+      display: inline-block;
+      margin: 0 0.9375em;
+      color: #777;
+      font-size: 1.5em;
+      cursor: pointer; }
+      .filter ul li:hover {
+        color: #1d1d1d; }
+      .filter ul li.active {
+        color: #1d1d1d;
+        text-decoration: underline; }
 
 .UI {
   position: relative;
