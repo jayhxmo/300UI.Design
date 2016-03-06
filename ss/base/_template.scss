@@ -32,3 +32,8 @@
 	@include transition(all $animation-duration $animation-timing);
 	-webkit-backface-visibility: hidden;
 }
+
+%transition-slow {
+	@include transition(all 300ms $animation-timing);
+	-webkit-backface-visibility: hidden;
+}

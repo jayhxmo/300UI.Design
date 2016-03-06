@@ -1,14 +1,15 @@
 html, body {
 	@include full-screen;
 	@include zero-box;
+	@include background($color-mineshaft);
 }
 
 .display-none {
 	display: none;
-	@include transition(all $animation-duration $animation-timing);
+	@extend %transition-slow;
 }
 
 .visible-none {
 	opacity: 0;
-	@include transition(all $animation-duration $animation-timing);
+	@extend %transition-slow;
 }

@@ -1,5 +1,6 @@
 .intro {
 	@include padding(em(50px) 0 em(30px));
+	@include background($color-white);
 	text-align: center;
 
 	img.me {
@@ -74,7 +75,7 @@
 
 	    &:hover::before {
 	    	opacity: 1;
-    		bottom: em(-50px);
+    		bottom: em(-40px);
 	    }
 	}
 }

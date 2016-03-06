@@ -10,6 +10,9 @@
 	background-position: center center !important;
 	background-size: cover !important;
 
+	@extend .animated;
+	@extend .fadeIn;
+
 	@include media (max-width $bp-lg) {
 		@include span-columns(4);
 		height: 20vw;

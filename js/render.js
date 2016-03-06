@@ -189,6 +189,9 @@ var RepeatModule = React.createClass({
 	getInitialState: function() {
 		return { UIs: [] }
 	},
+	shouldComponentUpdate: function(nextProps, nextState) {
+	    return true;
+	},
 	render: function() {
 		var _this = this,
 		listUIs = this.props.UIs.map(function(ui) {
@@ -223,7 +226,7 @@ $("#all").click(function(){
 	$('#all').addClass('active');
 	$('#highlights').removeClass('active');
 	$('#popular').removeClass('active');
-	ReactDOM.render(<RepeatModule UIs={UIs} />, document.querySelector('main'));
+	transition();
 });
 
 $('#highlights').click(function(){
@@ -231,7 +234,7 @@ $('#highlights').click(function(){
 	$('#all').removeClass('active');
 	$('#highlights').addClass('active');
 	$('#popular').removeClass('active');
-	ReactDOM.render(<RepeatModule UIs={UIs} />, document.querySelector('main'));
+	transition();
 });
 
 $('#popular').click(function(){
@@ -239,5 +242,14 @@ $('#popular').click(function(){
 	$('#all').removeClass('active');
 	$('#highlights').removeClass('active');
 	$('#popular').addClass('active');
-	ReactDOM.render(<RepeatModule UIs={UIs} />, document.querySelector('main'));
+	transition();
 });
+
+function transition() {
+	$('#ui-container').addClass('visible-none');
+	setTimeout(function(){ 
+		ReactDOM.render(<RepeatModule UIs={[]} />, document.querySelector('main'));
+		ReactDOM.render(<RepeatModule UIs={UIs} />, document.querySelector('main'));
+		$('#ui-container').removeClass('visible-none');
+    }, 300);  
+}
