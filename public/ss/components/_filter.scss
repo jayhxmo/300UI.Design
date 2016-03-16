@@ -1,0 +1,40 @@
+.filter {
+	@include size(100% em(75px));
+	@include margin(0);
+	@include padding(em(25px) 0);
+	@include background($color-gallery);
+	line-height: em(25px);
+	text-align: center;
+
+	ul {
+		list-style: none;
+		@include margin(0);
+
+		li {
+			display: inline-block;
+			@include margin(0 em(15px));
+
+			color: $color-boulder;
+			font-size: em(24px);
+		
+			border-bottom: 2px solid $color-gallery;
+
+			cursor: pointer;			
+			text-decoration: none;
+			
+			@extend %transition-slow;
+
+			&:hover {
+				color: $color-black;
+			}
+			
+			&.active {
+				color: $color-black;
+				border-bottom: 2px solid $color-black;
+				
+				@extend %transition-slow;
+			}
+
+		}
+	}
+}

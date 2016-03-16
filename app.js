@@ -62,6 +62,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use('/static', express.static('public'));
 
 // Routes
 app.get('/', function(req, res) {
@@ -133,13 +134,14 @@ app.get('/download/:token', function(req, res) {
             console.log("Not found - now query all results");
             // see if token expired, and if it did, then redirect to expired page
             // if not (expired & found), then redirect to 404
-            // res.redirect('/404');
+            // res.render('/404');
         }
 
-        console.log("Found: " + token);
-        res.send(token);
-        // res.render('download', {
-        // });
+        else {
+            // console.log("Found: " + token);
+            // res.send(token);
+            res.render('download.html', {});
+        }
     });
 });
 

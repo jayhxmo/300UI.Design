@@ -1,0 +1,25 @@
+// Form.scss
+
+input {
+	@include size(em(350px) em(50px));
+	@include margin(0 em(15px) 0 0);
+	@include padding(em(7px) em(25px));
+	
+	color: $color-black;
+	background-color: $color-white;
+	
+	border: 3px solid $color-gallery;
+	border-radius: em(350px);
+
+	font: normal normal $default-font-weight em(16px)/em(55px) $title-font;
+	
+	text-align: left;
+	outline: none;
+
+	@include transition(all $animation-duration $animation-timing);
+
+	&:focus {
+		border: 3px solid $color-white;
+		box-shadow: 0 em(5px) em(30px) $color-silverchalice;
+	}
+}

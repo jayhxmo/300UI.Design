@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Welcome Home</title>
+		<title>300 UI in 300 Days</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 		<!-- Styles -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="ss/main.css" rel="stylesheet">
+
+        <script src="https://use.typekit.net/dhf4pqf.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<form onsubmit="download(15); return false">
-			<input type="text" placeholder="day">
-			<button action="submit">submit</button>
-		</form>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
-		<script type="text/javascript">
-			var download = function(day) {
-				$.post(
-					"/download",
-					{
-						"email": "jayhxmo@gmail.com",
-						"day": day,
-					},
-					function (data) {
-						alert(data);
-						console.log(data);
-					},
-					"json"
-				);
-			};
-		</script>
+		<section class="intro" id="intro">
+			<img class="me" src="images/me.jpg">
+			<h1 id="title">300 UI in 300 Days</h1>
+			<p>My name is Jay Mo and I'm on a mission to design one user interface everyday, for 300 Days straight.</p>
+			<ul class="social">
+                <li><a href="mailto:jayhxmo@gmail.com" target="_blank" data-tip="Let's talk via Email"><i class="fa fa-envelope-o"></i></a></li>                   
+                
+                <li><a href="https://twitter.com/jayhxmo" target="_blank" data-tip="Follow me on Twitter"><i class="fa fa-twitter"></i></a></li>
+                
+                <li><a href="https://dribbble.com/jayhxmo" target="_blank"data-tip="See my designs on Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                
+                <li><a href="https://www.behance.net/jayhxmo" target="_blank" data-tip="Design with me on Behance"><i class="fa fa-behance"></i></a></li>
+
+                <li><a href="https://www.github.com/jayhxmo" target="_blank" data-tip="See my work on GitHub"><i class="fa fa-github"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/jayhxmo" target="_blank" data-tip="Connect with me on LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+		</section>
+		
+		<nav class="filter">
+			<ul>
+				<li id="all">All</li>
+				<li id="highlights" class="active">Highlights</li>
+				<li id="popular">Popular</li>
+			</ul>
+		</nav>
+
+		<main id="main"></main>
+
+		<div class="fab">
+			<a href="#intro">
+				<i class="fa fa-angle-up"></i>
+			</a>
+		</div>
+
+		<!-- jQuery.js -->
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.plusanchor.min.js"></script>
+		
+		<!-- React.js -->
+        <script src="/js/react.js"></script>
+        <script src="/js/react-dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+        <script type="text/babel" src="/js/render.js"></script>
+        
+		<script type="text/javascript" src="/js/featherlight.min.js"></script>
+		<script type="text/javascript" src="/js/script.js"></script>
 	</body>
 </html>

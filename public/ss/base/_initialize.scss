@@ -1,0 +1,19 @@
+html, body {
+	@include full-screen;
+	@include zero-box;
+	@include background($color-mineshaft);
+}
+
+.display-none {
+	display: none;
+	@extend %transition-slow;
+}
+
+.visible-none {
+	opacity: 0;
+	@extend %transition-slow;
+}
+
+.vertical-center {
+	@include vertical-center;
+}

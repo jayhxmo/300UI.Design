@@ -1,0 +1,123 @@
+.UI {
+	position: relative;
+	@include span-columns(3);
+	height: 15vw;
+	
+	@include margin(0);
+	@include padding(0);
+
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: cover !important;
+
+	@extend .animated;
+	@extend .fadeIn;
+
+	@include media (max-width $bp-lg) {
+		@include span-columns(4);
+		height: 20vw;
+	}
+
+	@include media (max-width $bp-md) {
+		@include span-columns(6);
+		height: 30vw;
+	}
+
+	@include media (max-width $bp-sm) {
+		@include span-columns(12);
+		height: 60vw;
+	}
+
+	.visible-container {
+		@include size(100% 100%);
+		@include margin(0);
+		@include padding(0);
+
+		background: rgba(0, 0, 0, 0.6);
+		color: $color-white;
+		
+		opacity: 0;
+		text-align: center;
+
+		@extend %transition;
+	}
+
+	&:hover {
+		.visible-container {
+			opacity: 1;
+
+			.view {				
+				span.arrow {
+					margin-left: em(5px);
+					background-position: right center;
+					opacity: 1;
+				}
+			}
+		}
+
+		.day {
+			cursor: pointer;
+			opacity: 0;
+		}
+	}
+}
+
+.day {
+	@include position(absolute, em(10px) 0 0 em(10px));
+	z-index: 10;
+	
+	@include size(em(54px));
+	@include margin(0);
+	@include padding(0);
+
+	@include background(rgba(0, 0, 0, 0.33));
+	color: $color-white;
+
+	font-family: $body-font;
+	@include font-sw(em(20px), 600);
+	text-align: center;
+
+	border-radius: 50%;
+	line-height: em(54px);
+
+	@extend %transition;
+}
+
+.vertical-center {
+	@include margin(0);
+	@include padding(em(15px));
+	@include vertical-center;
+
+	h1.name {
+		@include margin(0 auto em(2px));
+		font-size: em(36px);
+	}
+
+	h5.tags {
+		@include margin(0 auto);
+		color: $color-gallery;
+		font-style: italics;
+	}
+}
+
+
+button.view {
+	@include margin(3vh auto 0);
+	@extend %transition;
+
+	span.arrow {
+		display: inline-block;
+		@include size(em(20px) em(11px));
+		@include margin(0 0 0 em(-20px));
+
+		background: url('../images/arrow.svg') no-repeat;
+		background-position: em(-20px) center;
+	    background-size: cover;
+
+	    content: "";
+		opacity: 0;
+
+		@extend %transition;
+		transition-delay: 300ms;
+	}
+}

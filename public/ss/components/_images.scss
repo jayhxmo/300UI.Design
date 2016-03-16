@@ -1,0 +1,11 @@
+@for $i from 1 through 100 {
+    #day-#{$i} {
+		@include background(url("../images/UIs/Day #{$i} - UI.jpg"));
+    }
+}
+
+@for $i from 1 through 100 {
+    .UI:nth-child(#{$i}) {
+		animation-delay: 175ms + ($i * 125ms);
+    }
+}
