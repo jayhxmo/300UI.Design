@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Welcome Home</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<!-- Styles -->
+        <link href="ss/main.css" rel="stylesheet">
+	</head>
+	<body>
+		<form onsubmit="download(15); return false">
+			<input type="text" placeholder="day">
+			<button action="submit">submit</button>
+		</form>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script type="text/javascript">
+			var download = function(day) {
+				$.post(
+					"/download",
+					{
+						"email": "jayhxmo@gmail.com",
+						"day": day,
+					},
+					function (data) {
+						alert(data);
+						console.log(data);
+					},
+					"json"
+				);
+			};
+		</script>
+	</body>
+</html>
