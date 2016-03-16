@@ -117,7 +117,10 @@ app.post('/download', function(req, res, next) {
 app.get('/download/:token', function(req, res) {
     vip.findOne({ linkToken: req.params.token }, function(err, token) {
         if (!token) {
-            console.log("Not found - now query all results")
+            console.log("Not found - now query all results");
+            // see if token expired, and if it did, then redirect to expired page
+            // if not (expired & found), then redirect to 404
+            // res.redirect('/404');
         }
 
         console.log("Found: " + token);
