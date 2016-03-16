@@ -1,0 +1,45 @@
+@import "buttons";
+@import "form";
+@import "grid";
+@import "animate";
+@import "images";
+
+body {
+	color: $color-white;
+	text-align: center;
+}
+
+.subscription {
+	@include full-screen;
+	@include zero-box;
+	@extend #day-92;
+	background-size: cover;
+	background-position: center center;
+
+	.overlay {
+		@include full-screen;
+		@include zero-box;
+		@include background(rgba(0, 0, 0, 0.75));
+	}
+
+	h1.title {
+		@include margin(0 auto em(2px) auto);
+	}
+
+	h3 {
+		color: $color-gallery;
+	}
+
+	button {
+		position: relative;
+		top: em(30px);
+		@include background($color-dodgerblue);
+		color: $color-white;
+		box-shadow: 0 em(5px) em(30px) $color-dodgerblue;
+
+		&:hover {
+			@include background(lighten($color-dodgerblue, 2%));
+			box-shadow: 0 em(10px) em(40px) $color-dodgerblue;
+		}
+	}
+}

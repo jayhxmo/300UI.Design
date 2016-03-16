@@ -13,3 +13,7 @@ html, body {
 	opacity: 0;
 	@extend %transition-slow;
 }
+
+.vertical-center {
+	@include vertical-center;
+}
