@@ -9,6 +9,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mandrillTransport = require('nodemailer-mandrill-transport');
+var ttl = require('mongoose-ttl');
 
 var app = express();
 
@@ -26,23 +27,20 @@ var vipSchema = new mongoose.Schema({
     linkToken: { type: String, required: true, unique: true },
     linkExpires: Date
 });
+vipSchema.plugin(ttl, { ttl: '12hr' });
+
+var daySchema = new mongoose.Schema({
+    title: { type: String, required: true },
+    day: { type: Number, required: true },
+    tags: { type: String, required: true },
+    downloaded: { type: Number, required: true }
+});
 
 // Initialize MongoDB
-var vip = mongoose.model('VIP', vipSchema);
-mongoose.connect('mongodb://demo:demo@ds015929.mlab.com:15929/jmo-projects'); // connect with my server later
-
-// app.get('/download/:token', function(req, res) {
-//     vip.findOne({ linkToken: req.params.token, linkExpires: { $gt: Date.now() } }, function(err, token) {
-//         if (!token) {
-//             console.log("Expired?")
-//             return res.redirect('/');
-//         }
-
-//         res.render('download', {
-//         });
-//     });
-// });
-
+var vip = mongoose.model('downloads', vipSchema);
+var records = mongoose.model('users', vipSchema);
+var day = mongoose.model('days', daySchema);
+mongoose.connect('mongodb://demo:pw@ds015849.mlab.com:15849/300ui-in-300days'); // update username / pw later, and delete demo account
 
 // Middleware
 app.set('port', process.env.PORT || 3000);
@@ -74,33 +72,58 @@ app.post('/download', function(req, res, next) {
             var newVIP = new vip({
                 email: req.body.email,
                 day: req.body.day,
-                linkToken: token,
-                linkExpires: Date.now() + 43200000 // 12 hours
+                linkToken: token
             });
+            newVIP.save();
+            // newVIP.save(function(err) {});
 
-            // implement writing document to mongo
-            console.log(vip);
+            var newUser = new records({
+                email: req.body.email,
+                day: req.body.day,
+                linkToken: token
+            });
+            newUser.save();
+
+            day.findOneAndUpdate({ day: 100 }, { $inc: { downloaded: 1 } }, function (err, doc) {});
+
             done(null, token, vip);
         },
         function(token, user, done) {
-            transport.sendMail({
-                from: '300 UI in 300 Days <download@300ui.design>',
-                to: 'jayhxmo@gmail.com',
-                subject: 'Download: Day ' + req.body.day + " - Calculator",
-                html: '<a href="300ui.design/download/' + token + '">Download</a>'
-            },
+            // transport.sendMail({
+            //     from: '300 UI in 300 Days <download@300ui.design>',
+            //     to: req.body.email,
+            //     subject: 'Download: Day ' + req.body.day + " - Calculator",
+            //     html: '<a href="300ui.design/download/' + token + '">Download</a>'
+            // },
 
-            function(err, info) {
-                if (err) {
-                    console.error(err);
-                } else {
-                    console.log(info);
-                }
-            });
+            // function(err, info) {
+            //     if (err) {
+            //         // console.error(err);
+            //     } 
+
+            //     else {
+            //         // console.log(info);
+            //     }
+            // });
+
+            // Update and notify the user that the email has been sent
         }
     ], function(err) {
         if (err) return next(err);
         // res.redirect('/forgot');
+    });
+});
+
+app.get('/download/:token', function(req, res) {
+    vip.findOne({ linkToken: req.params.token }, function(err, token) {
+        if (!token) {
+            console.log("Not found - now query all results")
+        }
+
+        console.log("Found: " + token);
+        res.send(token);
+        // res.render('download', {
+        // });
     });
 });
 
