@@ -13,11 +13,13 @@
     "ejs": "^2.4.1",
     "express": "~4.13.1",
     "express-session": "^1.13.0",
+    "jquery": "^2.2.1",
     "mongoose": "^4.4.7",
     "mongoose-ttl": "0.0.3",
     "morgan": "~1.6.1",
     "nodemailer": "^2.3.0",
     "nodemailer-mandrill-transport": "^1.1.0",
+    "nunjucks": "^2.4.0",
     "serve-favicon": "~2.3.0"
   }
 }

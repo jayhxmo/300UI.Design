@@ -62,7 +62,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use('/static', express.static('public'));
 
 // Routes
 app.get('/', function(req, res) {
@@ -95,28 +94,31 @@ app.post('/download', function(req, res, next) {
             });
             newUser.save();
 
-            // day.findOneAndUpdate({ day: 100 }, { $inc: { downloaded: 1 } }, function (err, doc) {});
-
             done(null, token, vip);
         },
         function(token, user, done) {
-            transport.sendMail({
+            day.findOne({ day: req.body.day }, function(err, token) {
+                var uiTitle = token.title;
+                console.log(token);
+
+                transport.sendMail({
                 from: '300 UI in 300 Days <download@300ui.design>',
                 to: req.body.email,
-                subject: 'Download: Day ' + req.body.day + " - Calculator",
+                subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
                 html: downloadEmail[0] + req.body.day + ' - ' + uiTitle +
                       downloadEmail[1] + 'raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/Day%20' + req.body.day +'%20-%20UI.jpg' +
                       downloadEmail[2] + 'http://300ui.design/download/' + token + 
                       downloadEmail[3]
-            },
-            function(err, info) {
-                if (err) {
-                    // console.error(err);
-                } 
+                },
+                function(err, info) {
+                    if (err) {
+                        // console.error(err);
+                    } 
 
-                else {
-                    // console.log(info);
-                }
+                    else {
+                        // console.log(info);
+                    }
+                });
             });
 
             // Update and notify the user that the email has been sent
@@ -128,8 +130,9 @@ app.post('/download', function(req, res, next) {
 });
 
 app.get('/download/:token', function(req, res) {
-    // res.send('sup');
     vip.findOne({ linkToken: req.params.token }, function(err, token) {
+        console.log(req.params.token);
+        console.log(token);
         if (!token) {
             console.log("Not found - now query all results");
             // see if token expired, and if it did, then redirect to expired page
@@ -140,7 +143,9 @@ app.get('/download/:token', function(req, res) {
         else {
             // console.log("Found: " + token);
             // res.send(token);
-            res.render('download.html', {});
+            res.render('download.html', { day: token.day });
+            $('.subscription').css('background', 'url(/images/UIs/Day ' + token + ' - UI.jpg)');
+            day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function (err, doc) {});
         }
     });
 });
