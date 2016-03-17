@@ -142,9 +142,6 @@ var RepeatModule = React.createClass({
 			UIindex = popularIndex.indexOf(day);
 		}
 
-		console.log(UIindex);
-		console.log(UIs[UIindex]);
-
 		$.featherlight(
 			'<html>' +
 				'<head>' +
@@ -159,9 +156,9 @@ var RepeatModule = React.createClass({
 						'<h4 class="tags">' + UIs[UIindex]['tags'] + '</h4>' +
 					'</div>' +
 					'<div class="download">' +
-						'<form id="downloadForm" onclick="download(' + day + '); return false">' +
+						'<form id="downloadForm" onsubmit="download(' + day + '); return false">' +
 							'<h5 class="download-info">Download (ZIP containing PSD) is Sent Via Email</h5>' +
-							'<input id="email" type="email" placeholder="Email address">' +
+							'<input id="email" oninput="validate()" type="email" placeholder="Email address">' +
 							'<button>Download</button>' +
 							'<h5 class="stats">Downloaded: 420 times &middot; Size: 1.4MB</h6>' + 
 							'<h6 class="disclaimer">Don\'t worry, I hate spam too. There will also be an unsubscribe<br>button in the email if you choose not to get future updates.</h6>' +

@@ -105,12 +105,13 @@ app.post('/download', function(req, res, next) {
             var linkToken = token;
             day.findOne({ day: req.body.day }, function(err, token) {
                 var uiTitle = token.title;
-                console.log(token);
+                // console.log(token);
 
-                console.log(downloadEmail[0] + req.body.day + ' - ' + uiTitle +
+                /*console.log(downloadEmail[0] + req.body.day + ' - ' + uiTitle +
                       downloadEmail[1] + 'raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/Day%20' + req.body.day +'%20-%20UI.jpg' +
                       downloadEmail[2] + 'http://300ui.design/download/' + linkToken + 
-                      downloadEmail[3]);
+                      downloadEmail[3]); */
+                      
                 // transport.sendMail({
                 // from: '300 UI in 300 Days <download@300ui.design>',
                 // to: req.body.email,
@@ -141,8 +142,8 @@ app.post('/download', function(req, res, next) {
 
 app.get('/download/:token', function(req, res) {
     vip.findOne({ linkToken: req.params.token }, function(err, token) {
-        console.log(req.params.token);
-        console.log(token);
+        // console.log(req.params.token);
+        // console.log(token);
         if (!token) {
             console.log("Not found - now query all results");
             // see if token expired, and if it did, then redirect to expired page
@@ -152,7 +153,7 @@ app.get('/download/:token', function(req, res) {
 
         else {
             // res.send(token);
-            console.log("Found: " + token);
+            // console.log("Found: " + token);
             res.render('download.html', { "day": token.day });
             // $('.subscription').css('background', 'url(/images/UIs/Day ' + token + ' - UI.jpg)');
             day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function (err, doc) {});

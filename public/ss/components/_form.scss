@@ -11,7 +11,9 @@ input {
 	border: 3px solid $color-gallery;
 	border-radius: em(350px);
 
-	font: normal normal $default-font-weight em(16px)/em(55px) $title-font;
+	// font: normal normal $default-font-weight em(16px)/em(55px) $title-font;
+	font-family: $title-font;
+	@include font-sw(em(16px), $default-font-weight);
 	
 	text-align: left;
 	outline: none;
