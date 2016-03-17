@@ -8,17 +8,16 @@ var downloadEmail = [
     '\" style=\"display: block; width: 200px; height: 50px; border: 0; border-radius: 50px; background: #229aff; color: #fff; font-family: \'Helvetica\', \'Arial\', sans-serif; font-weight: bold; margin: 15px auto 7px; box-shadow: 0 5px 30px #229aff; line-height: 50px; text-decoration: none;\">DOWNLOAD</a><h6 style=\"font-size: 10px; margin: 15px auto 0 auto;\">It\'s also <a href=\"https://github.com/jayhxmo/300UI-in-300Days\">open source</a></h6><ul style=\"list-style: none; margin: 50px auto 0; display: inline-block; padding: 0;\"> <li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://twitter.com/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/twitter.png\" alt=\"\"></a></li><li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://dribbble.com/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/dribbble.png\" alt=\"\"></a></li><li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://www.behance.net/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/behance.png\" alt=\"\"></a></li><li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://www.github.com/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/github.png\" alt=\"\"></a></li><li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://www.linkedin.com/in/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/linkedin.png\" alt=\"\"></a></li></center></ul></div></body></html>'
 ];
 
-var session = require('express-session')
 var mongoose = require('mongoose');
-var nodemailer = require('nodemailer');
 var async = require('async');
 var crypto = require('crypto');
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
-var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var nodemailer = require('nodemailer');
 var mandrillTransport = require('nodemailer-mandrill-transport');
+var nunjucks = require('nunjucks');
 var ttl = require('mongoose-ttl');
 
 var app = express();
@@ -55,13 +54,19 @@ mongoose.connect('mongodb://demo:pw@ds015849.mlab.com:15849/300ui-in-300days'); 
 // Middleware
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'ejs');
+// app.engine('html', require('ejs').renderFile);
+// app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+nunjucks.configure(app.get('views'), {
+    autoescape: true,
+    noCache: true,
+    watch: true,
+    express: app
+});
 
 // Routes
 app.get('/', function(req, res) {
@@ -97,28 +102,33 @@ app.post('/download', function(req, res, next) {
             done(null, token, vip);
         },
         function(token, user, done) {
+            var linkToken = token;
             day.findOne({ day: req.body.day }, function(err, token) {
                 var uiTitle = token.title;
                 console.log(token);
 
-                transport.sendMail({
-                from: '300 UI in 300 Days <download@300ui.design>',
-                to: req.body.email,
-                subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
-                html: downloadEmail[0] + req.body.day + ' - ' + uiTitle +
+                console.log(downloadEmail[0] + req.body.day + ' - ' + uiTitle +
                       downloadEmail[1] + 'raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/Day%20' + req.body.day +'%20-%20UI.jpg' +
-                      downloadEmail[2] + 'http://300ui.design/download/' + token + 
-                      downloadEmail[3]
-                },
-                function(err, info) {
-                    if (err) {
-                        // console.error(err);
-                    } 
+                      downloadEmail[2] + 'http://300ui.design/download/' + linkToken + 
+                      downloadEmail[3]);
+                // transport.sendMail({
+                // from: '300 UI in 300 Days <download@300ui.design>',
+                // to: req.body.email,
+                // subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
+                // html: downloadEmail[0] + req.body.day + ' - ' + uiTitle +
+                //       downloadEmail[1] + 'raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/Day%20' + req.body.day +'%20-%20UI.jpg' +
+                //       downloadEmail[2] + 'http://300ui.design/download/' + token + 
+                //       downloadEmail[3]
+                // },
+                // function(err, info) {
+                //     if (err) {
+                //         // console.error(err);
+                //     } 
 
-                    else {
-                        // console.log(info);
-                    }
-                });
+                //     else {
+                //         // console.log(info);
+                //     }
+                // });
             });
 
             // Update and notify the user that the email has been sent
@@ -141,10 +151,10 @@ app.get('/download/:token', function(req, res) {
         }
 
         else {
-            // console.log("Found: " + token);
             // res.send(token);
-            res.render('download.html', { day: token.day });
-            $('.subscription').css('background', 'url(/images/UIs/Day ' + token + ' - UI.jpg)');
+            console.log("Found: " + token);
+            res.render('download.html', { "day": token.day });
+            // $('.subscription').css('background', 'url(/images/UIs/Day ' + token + ' - UI.jpg)');
             day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function (err, doc) {});
         }
     });
