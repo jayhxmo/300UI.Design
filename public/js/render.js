@@ -148,7 +148,7 @@ var RepeatModule = React.createClass({
 				'</head>' +
 				'<body>' +
 					'<div class="img-container">' +
-						'<img class="showcase" src="images/UIs/Day ' + day + ' - UI.jpg">' +
+						'<img class="showcase" src="images/UIs/full/Day ' + day + ' - UI.jpg">' +
 					'</div>' +
 					'<div class="info">' +
 						'<h4 class="credits">Designed by <a href="http://dribbble.com/jayhxmo">Jay Mo</a></h4>' +
