@@ -105,45 +105,35 @@ app.post('/download', function(req, res, next) {
             var linkToken = token;
             day.findOne({ day: req.body.day }, function(err, token) {
                 var uiTitle = token.title;
-                // console.log(token);
 
-                /*console.log(downloadEmail[0] + req.body.day + ' - ' + uiTitle +
-                      downloadEmail[1] + 'raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/Day%20' + req.body.day +'%20-%20UI.jpg' +
-                      downloadEmail[2] + 'http://300ui.design/download/' + linkToken + 
-                      downloadEmail[3]); */
-                      
-                // transport.sendMail({
-                // from: '300 UI in 300 Days <download@300ui.design>',
-                // to: req.body.email,
-                // subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
-                // html: downloadEmail[0] + req.body.day + ' - ' + uiTitle +
-                //       downloadEmail[1] + 'raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/Day%20' + req.body.day +'%20-%20UI.jpg' +
-                //       downloadEmail[2] + 'http://300ui.design/download/' + token + 
-                //       downloadEmail[3]
-                // },
-                // function(err, info) {
-                //     if (err) {
-                //         // console.error(err);
-                //     } 
+                console.log('emailing');
+                transport.sendMail({
+                    from: '300 UI in 300 Days <download@300ui.design>',
+                    to: req.body.email,
+                    subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
+                    html: downloadEmail[0] + req.body.day + ' - ' + uiTitle +
+                          downloadEmail[1] + 'raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/retina/Day%20' + req.body.day +'%20-%20UI.jpg' +
+                          downloadEmail[2] + 'http://300ui.design/download/' + linkToken + 
+                          downloadEmail[3]
+                },
+                function(err, info) {
+                    if (err) {
+                        // console.error(err);
+                    } 
 
-                //     else {
-                //         // console.log(info);
-                //     }
-                // });
+                    else {
+                        // console.log(info);
+                    }
+                });
             });
-
-            // Update and notify the user that the email has been sent
         }
     ], function(err) {
         if (err) return next(err);
-        // res.redirect('/forgot');
     });
 });
 
 app.get('/download/:token', function(req, res) {
     vip.findOne({ linkToken: req.params.token }, function(err, token) {
-        // console.log(req.params.token);
-        // console.log(token);
         if (!token) {
             console.log("Not found - now query all results");
             // see if token expired, and if it did, then redirect to expired page
@@ -154,9 +144,13 @@ app.get('/download/:token', function(req, res) {
         else {
             // res.send(token);
             // console.log("Found: " + token);
+            // var fileLocation = __dirname + '/public/downloads/day' + token.day.toString() + '.zip';
+            // res.send(fileLocation);
+            
             res.render('download.html', { "day": token.day });
-            // $('.subscription').css('background', 'url(/images/UIs/Day ' + token + ' - UI.jpg)');
             day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function (err, doc) {});
+
+
         }
     });
 });

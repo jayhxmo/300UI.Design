@@ -13,7 +13,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
-		<section class="subscription" style="background: url('/images/UIs/Day {{day}} - UI.jpg') no-repeat center center; background-size: cover;">
+		<section class="subscription" style="background: url('/images/UIs/full/Day {{day}} - UI.jpg') no-repeat center center; background-size: cover;">
 			<div class="overlay">
 				<div class="vertical-center">
 					<!-- <h1 class="title">{{title}}</h1> -->
@@ -25,7 +25,9 @@
 			</div>
 		</section>
 
-		<!-- jQuery.js -->
-		<script type="text/javascript" src="/js/script.js"></script>
+		<script>
+			// e.preventDefault();  //stop the browser from following
+    		window.location.href = '/downloads/day{{day}}.zip';
+		</script>
 	</body>
 </html>

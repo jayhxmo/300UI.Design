@@ -25,7 +25,7 @@ var download = function(day) {
 		$.post(
 			"/download",
 			{
-				"email": "jayhxmo@gmail.com",
+				"email": email,
 				"day": day,
 			},
 			function (data) {
