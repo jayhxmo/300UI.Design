@@ -112,17 +112,17 @@ app.post('/download', function(req, res, next) {
                     to: req.body.email,
                     subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
                     html: downloadEmail[0] + req.body.day + ' - ' + uiTitle +
-                          downloadEmail[1] + 'raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/retina/Day%20' + req.body.day +'%20-%20UI.jpg' +
+                          downloadEmail[1] + 'https://raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/retina/Day%20' + req.body.day +'%20-%20UI.jpg' +
                           downloadEmail[2] + 'http://300ui.design/download/' + linkToken + 
                           downloadEmail[3]
                 },
                 function(err, info) {
                     if (err) {
-                        // console.error(err);
+                        res.sendStatus(500);
                     } 
 
                     else {
-                        // console.log(info);
+                        res.sendStatus(200);
                     }
                 });
             });
@@ -146,7 +146,7 @@ app.get('/download/:token', function(req, res) {
             // console.log("Found: " + token);
             // var fileLocation = __dirname + '/public/downloads/day' + token.day.toString() + '.zip';
             // res.send(fileLocation);
-            
+
             res.render('download.html', { "day": token.day });
             day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function (err, doc) {});
 
