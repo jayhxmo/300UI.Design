@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Downloading: Day 15 - Calculator</title>
+		<title>Downloading: Day {{day}} - {{title}}</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
@@ -40,7 +40,7 @@
 		</section>
 
 		<script>
-    		// window.location.href = '/downloads/day{{day}}.zip';
+    		window.location.href = '/downloads/day{{day}}.zip';
 
 			function validateRequired(target) {
 				console.log(target);
@@ -66,24 +66,17 @@
 					$('#mc-LNAME').val($('#LNAME').val());
 					$('#mc-embedded-subscribe').click();
 					$('input').prop('disabled', true); 
-					$('button').prop('disabled', true); 
-					// $('#mc-embedded-subscribe-form').submit();
+					$('button').prop('disabled', true);
 				}
 			}
-
-			// 	var linkToken = window.location.href.split('/')[window.location.href.split('/').length - 1];
-
-			// 	$('button').html('Thanks! Check Your Email :)')
-				
-			// 	return false;
 		</script>
-		<!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script> -->
 		<script type='text/javascript' src='/js/jquery.min.js'></script>
 		<script type='text/javascript' src="//malsup.github.com/jquery.form.js"></script>
 		<script type='text/javascript' src='/js/validate.js'></script>
 		<script type='text/javascript'>
 			window.fnames = new Array();
 			window.ftypes = new Array();
+
 			fnames[0]='EMAIL';
 			ftypes[0]='email';
 			fnames[1]='FNAME';

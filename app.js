@@ -38,6 +38,13 @@ var vipSchema = new mongoose.Schema({
 });
 vipSchema.plugin(ttl, { ttl: '12hr' });
 
+var recordsSchema = new mongoose.Schema({
+    email: { type: String, required: true },
+    day: { type: Number, required: true },
+    linkToken: { type: String, required: true, unique: true },
+    linkExpires: Date
+});
+
 var daySchema = new mongoose.Schema({
     title: { type: String, required: true },
     day: { type: Number, required: true },
@@ -47,7 +54,7 @@ var daySchema = new mongoose.Schema({
 
 // Initialize MongoDB
 var vip = mongoose.model('downloads', vipSchema);
-var records = mongoose.model('users', vipSchema);
+var records = mongoose.model('users', recordsSchema);
 var day = mongoose.model('days', daySchema);
 mongoose.connect('mongodb://demo:pw@ds015849.mlab.com:15849/300ui-in-300days'); // update username / pw later, and delete demo account
 
@@ -134,15 +141,25 @@ app.post('/download', function(req, res, next) {
 app.get('/download/:token', function(req, res) {
     vip.findOne({ linkToken: req.params.token }, function(err, token) {
         if (!token) {
-            console.log("Not found - now query all results");
+            records.findOne({ linkToken: req.params.token }, function(err, result) {
+                if (!result) {
+                    res.send("Load Error 404");
+                }
+
+                else {
+                    res.send("Expired Token - Tokens Expire in 24 Hours");
+                }
+            });
             // see if token expired, and if it did, then redirect to expired page
             // if not (expired & found), then redirect to 404
             // res.render('/404');
         }
 
         else {
-            res.render('download.html', { "day": token.day, "email": token.email });
-            day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function (err, doc) {});
+            day.findOne({ day: token.day }, function(err, result) {
+                res.render('download.html', { "day": token.day, "email": token.email, "title": result.title });
+                day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function (err, doc) {});
+            });
         }
     });
 });
