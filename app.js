@@ -90,7 +90,6 @@ app.post('/download', function(req, res, next) {
                 linkToken: token
             });
             newVIP.save();
-            // newVIP.save(function(err) {});
 
             var newUser = new records({
                 email: req.body.email,
@@ -142,17 +141,14 @@ app.get('/download/:token', function(req, res) {
         }
 
         else {
-            // res.send(token);
-            // console.log("Found: " + token);
-            // var fileLocation = __dirname + '/public/downloads/day' + token.day.toString() + '.zip';
-            // res.send(fileLocation);
-
-            res.render('download.html', { "day": token.day });
+            res.render('download.html', { "day": token.day, "email": token.email });
             day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function (err, doc) {});
-
-
         }
     });
+});
+
+app.post('/subscribe', function(req, res, next) {
+
 });
 
 app.listen(app.get('port'), function() {

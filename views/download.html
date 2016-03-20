@@ -16,18 +16,80 @@
 		<section class="subscription" style="background: url('/images/UIs/full/Day {{day}} - UI.jpg') no-repeat center center; background-size: cover;">
 			<div class="overlay">
 				<div class="vertical-center">
-					<!-- <h1 class="title">{{title}}</h1> -->
 					<h1 class="title">Your Download is Starting Now</h1>
 					<h3>Want to hear more things like this from me?</h3>
-					<button>Subscribe</button>
+					<form onsubmit="sendSubscription(); return false">
+						<input type="text" name="FNAME" class="required" id="FNAME" placeholder="First Name" oninput="validateRequired('#FNAME')">
+						<input type="text" name="LNAME" class="required" id="LNAME" placeholder="Last Name" oninput="validateRequired('#LNAME')">
+						<button action="submit">Subscribe</button>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display: none"></div>
+							<div class="response" id="mce-success-response" style="display: none"></div>
+						</div>
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9753122d909e2fad4adf540ab_cef185f340" tabindex="-1" value=""></div>
+					</form>
+					<form action="//jaymo.us13.list-manage.com/subscribe/post?u=9753122d909e2fad4adf540ab&amp;id=cef185f340" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display: none;">
+						<input type="text" name="FNAME" class="required" id="mce-FNAME" placeholder="First Name" oninput="validateRequired('#mce-FNAME')" style="display: none;">
+						<input type="text" name="LNAME" class="required" id="mce-LNAME" placeholder="Last Name" oninput="validateRequired('#mce-LNAME')" style="display: none;">
+						<input type="email" value="{{email}}" name="EMAIL" class="required email" id="mce-EMAIL" style="display: none;">
+						<button action="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+					</form>
 					<h6>Don't worry, I'm not going to spam you</h6>
 				</div>	
 			</div>
 		</section>
 
 		<script>
-			// e.preventDefault();  //stop the browser from following
-    		window.location.href = '/downloads/day{{day}}.zip';
+    		// window.location.href = '/downloads/day{{day}}.zip';
+
+			function validateRequired(target) {
+				console.log(target);
+				$(target).css('border', '3px solid #eee');
+			}
+
+			function sendSubscription() {
+				// console.log('subscribing');
+				var sendRequest = true;
+
+				if (!($('#FNAME').val())) {
+					$('#FNAME').css('border', '3px solid #e74c3c');
+					sendRequest = false;
+				}
+
+				if (!($('#LNAME').val())) {
+					$('#LNAME').css('border', '3px solid #e74c3c');
+					sendRequest = false;
+				}
+
+				if (sendRequest) {
+					$('#mc-FNAME').val($('#FNAME').val());
+					$('#mc-LNAME').val($('#LNAME').val());
+					$('#mc-embedded-subscribe').click();
+					$('input').prop('disabled', true); 
+					$('button').prop('disabled', true); 
+					// $('#mc-embedded-subscribe-form').submit();
+				}
+			}
+
+			// 	var linkToken = window.location.href.split('/')[window.location.href.split('/').length - 1];
+
+			// 	$('button').html('Thanks! Check Your Email :)')
+				
+			// 	return false;
+		</script>
+		<!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script> -->
+		<script type='text/javascript' src='/js/jquery.min.js'></script>
+		<script type='text/javascript' src="//malsup.github.com/jquery.form.js"></script>
+		<script type='text/javascript' src='/js/validate.js'></script>
+		<script type='text/javascript'>
+			window.fnames = new Array();
+			window.ftypes = new Array();
+			fnames[0]='EMAIL';
+			ftypes[0]='email';
+			fnames[1]='FNAME';
+			ftypes[1]='text';
+			fnames[2]='LNAME';
+			ftypes[2]='text';
 		</script>
 	</body>
 </html>
