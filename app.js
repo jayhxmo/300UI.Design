@@ -80,6 +80,10 @@ app.get('/', function(req, res) {
     res.render('index.html');
 });
 
+// app.get('/404', function(req, res) {
+//     res.render('404.html');
+// });
+
 // Requesting Download
 app.post('/download', function(req, res, next) {
     async.waterfall([
@@ -143,16 +147,13 @@ app.get('/download/:token', function(req, res) {
         if (!token) {
             records.findOne({ linkToken: req.params.token }, function(err, result) {
                 if (!result) {
-                    res.send("Load Error 404");
+                    res.redirect('/404');
                 }
 
                 else {
-                    res.send("Expired Token - Tokens Expire in 24 Hours");
+                    res.render('expired.html', { "day": result.day });
                 }
             });
-            // see if token expired, and if it did, then redirect to expired page
-            // if not (expired & found), then redirect to 404
-            // res.render('/404');
         }
 
         else {
@@ -164,8 +165,8 @@ app.get('/download/:token', function(req, res) {
     });
 });
 
-app.post('/subscribe', function(req, res, next) {
-
+app.use(function(req, res, next){
+    res.render('404.html');
 });
 
 app.listen(app.get('port'), function() {
