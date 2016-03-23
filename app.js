@@ -106,7 +106,7 @@ app.get('/', function(req, res) {
 
 // Pass Data for UI Rendering
 app.get('/UIs', function(req, res) {
-    day.find({}, function(err, UIs) {
+    day.find().sort([['day', -1]]).exec(function(error, UIs) {
         var all = [];
 
         var index = 0;
