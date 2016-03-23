@@ -167,6 +167,7 @@ app.get('/download/:token', function(req, res) {
 
 app.use(function(req, res, next){
     res.render('404.html');
+    // res.render('mailchimp.html');
 });
 
 app.listen(app.get('port'), function() {

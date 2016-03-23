@@ -26,11 +26,10 @@
 							<div class="response" id="mce-error-response" style="display: none"></div>
 							<div class="response" id="mce-success-response" style="display: none"></div>
 						</div>
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9753122d909e2fad4adf540ab_cef185f340" tabindex="-1" value=""></div>
 					</form>
 					<form action="//jaymo.us13.list-manage.com/subscribe/post?u=9753122d909e2fad4adf540ab&amp;id=cef185f340" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display: none;">
-						<input type="text" name="FNAME" class="required" id="mce-FNAME" placeholder="First Name" oninput="validateRequired('#mce-FNAME')" style="display: none;">
-						<input type="text" name="LNAME" class="required" id="mce-LNAME" placeholder="Last Name" oninput="validateRequired('#mce-LNAME')" style="display: none;">
+						<input type="text" name="FNAME" class="required" id="mce-FNAME" placeholder="First Name" style="display: none;">
+						<input type="text" name="LNAME" class="required" id="mce-LNAME" placeholder="Last Name" style="display: none;">
 						<input type="email" value="{{email}}" name="EMAIL" class="required email" id="mce-EMAIL" style="display: none;">
 						<button action="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
 					</form>
@@ -39,16 +38,27 @@
 			</div>
 		</section>
 
+		<script type='text/javascript' src='/js/jquery.min.js'></script>
+		<script type='text/javascript' src="http://malsup.github.com/jquery.form.js"></script>
+		<script type='text/javascript' src='/js/validate.js'></script>
+		<script type='text/javascript'>
+			window.fnames = new Array();
+			window.ftypes = new Array();
+			fnames[0]='EMAIL';
+			ftypes[0]='email';
+			fnames[1]='FNAME';
+			ftypes[1]='text';
+			fnames[2]='LNAME';
+			ftypes[2]='text';
+		</script>
 		<script>
     		window.location.href = '/downloads/day{{day}}.zip';
 
 			function validateRequired(target) {
-				// console.log(target);
 				$(target).css('border', '3px solid #eee');
 			}
 
 			function sendSubscription() {
-				// console.log('subscribing');
 				var sendRequest = true;
 
 				if (!($('#FNAME').val())) {
@@ -62,27 +72,19 @@
 				}
 
 				if (sendRequest) {
-					$('#mc-FNAME').val($('#FNAME').val());
-					$('#mc-LNAME').val($('#LNAME').val());
+					$('#mce-FNAME').val($('#FNAME').val().toLowerCase().capitalize());
+					$('#mce-LNAME').val($('#LNAME').val());
 					$('#mc-embedded-subscribe').click();
 					$('input').prop('disabled', true); 
 					$('button').prop('disabled', true);
 				}
 			}
-		</script>
-		<script type='text/javascript' src='/js/jquery.min.js'></script>
-		<script type='text/javascript' src="http://malsup.github.com/jquery.form.js"></script>
-		<script type='text/javascript' src='/js/validate.js'></script>
-		<script type='text/javascript'>
-			window.fnames = new Array();
-			window.ftypes = new Array();
 
-			fnames[0]='EMAIL';
-			ftypes[0]='email';
-			fnames[1]='FNAME';
-			ftypes[1]='text';
-			fnames[2]='LNAME';
-			ftypes[2]='text';
+			String.prototype.capitalize = function(){
+				return this.replace( /(^|\s)([a-z])/g , function(m, p1, p2) { 
+					return p1 + p2.toUpperCase(); 
+				});
+			};
 		</script>
 	</body>
 </html>
