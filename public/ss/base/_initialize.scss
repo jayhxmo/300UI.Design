@@ -2,6 +2,7 @@ html, body {
 	@include full-screen;
 	@include zero-box;
 	@include background($color-mineshaft);
+	@include scrollbars(.5em, $color-dustygray);
 }
 
 .display-none {

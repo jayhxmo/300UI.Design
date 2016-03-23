@@ -27,7 +27,6 @@
 	}
 }
 
-
 %transition {
 	@include transition(all $animation-duration $animation-timing);
 	-webkit-backface-visibility: hidden;
@@ -36,4 +35,28 @@
 %transition-slow {
 	@include transition(all 300ms $animation-timing);
 	-webkit-backface-visibility: hidden;
+}
+
+/// @author Hugo Giraudel
+/// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+/// @param {Color} $foreground-color - Scrollbar's color
+/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 25%)) {
+	::-webkit-scrollbar {
+		width:  $size;
+		height: $size;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: $foreground-color;
+	}
+
+	::-webkit-scrollbar-track {
+		background: $background-color;
+	}
+
+	body {
+		scrollbar-face-color: $foreground-color;
+		scrollbar-track-color: $background-color;
+	}
 }

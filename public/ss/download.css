@@ -191,6 +191,16 @@ html, body {
   padding: 0;
   background: #262626;
   background: #262626; }
+  html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em; }
+  html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
+    background: #999; }
+  html ::-webkit-scrollbar-track, body ::-webkit-scrollbar-track {
+    background: #e6e6e6; }
+  html body, body body {
+    scrollbar-face-color: #999;
+    scrollbar-track-color: #e6e6e6; }
 
 .display-none {
   display: none; }

@@ -7,8 +7,7 @@ var UIs = [];
 
 $.getJSON('/UIs', function(data, textStatus, jqXHR) {
 	all = data;
-	// console.log('Data recieved from server: ' + data);
-	console.log(all);
+	// console.log(all);
 
 	var hIC = 0;
 	var pIC = 0;
@@ -63,7 +62,7 @@ $.getJSON('/UIs', function(data, textStatus, jqXHR) {
 								'<h5 class="download-info">Download (ZIP containing PSD) is Sent Via Email</h5>' +
 								'<input id="email" oninput="validate()" type="email" placeholder="Email address">' +
 								'<button>Download</button>' +
-								'<h5 class="stats">Downloaded: 420 times &middot; Size: 1.4MB</h6>' + 
+								'<h5 class="stats">Downloaded: ' + UIs[UIindex]['downloaded'] + ' times &middot; Size: ' + UIs[UIindex]['size'] + 'MB</h6>' + 
 								'<h6 class="disclaimer">Don\'t worry, I hate spam too. There will also be an unsubscribe<br>button in the email if you choose not to get future updates.</h6>' +
 							'</form>' +
 						'</div>' +
