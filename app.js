@@ -12,6 +12,7 @@ var mongoose = require('mongoose');
 var async = require('async');
 var crypto = require('crypto');
 var express = require('express');
+var fs = require('fs');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
@@ -33,23 +34,22 @@ var transport = nodemailer.createTransport(mandrillTransport({
 var vipSchema = new mongoose.Schema({
     email: { type: String, required: true },
     day: { type: Number, required: true },
-    linkToken: { type: String, required: true, unique: true },
-    linkExpires: Date
+    linkToken: { type: String, required: true, unique: true }
 });
 vipSchema.plugin(ttl, { ttl: '12hr' });
 
 var recordsSchema = new mongoose.Schema({
     email: { type: String, required: true },
     day: { type: Number, required: true },
-    linkToken: { type: String, required: true, unique: true },
-    linkExpires: Date
+    linkToken: { type: String, required: true, unique: true }
 });
 
 var daySchema = new mongoose.Schema({
     title: { type: String, required: true },
     day: { type: Number, required: true },
     tags: { type: String, required: true },
-    downloaded: { type: Number, required: true }
+    downloaded: { type: Number, required: true },
+    size: { type: Number, required: true }
 });
 
 // Initialize MongoDB
@@ -57,6 +57,30 @@ var vip = mongoose.model('downloads', vipSchema);
 var records = mongoose.model('users', recordsSchema);
 var day = mongoose.model('days', daySchema);
 mongoose.connect('mongodb://demo:pw@ds015849.mlab.com:15849/300ui-in-300days'); // update username / pw later, and delete demo account
+
+/****************************************************
+*****   D O     N O T     U N C O M M M E N T   *****
+****************************************************/
+// function fsMB(filename) {
+//     var stats = fs.statSync(filename)
+//     var fileSizeInBytes = stats["size"]
+//     return fileSizeInBytes / 1000000;
+// }
+
+// for (var i = 1; i <= 100; i++) {
+//     var index = 100 - i;
+//     var dayEntry = new day({
+//         title: all[index]["title"],
+//         day: all[index]["day"],
+//         tags: all[index]["tags"],
+//         downloaded: 0,
+//         size: Math.round(fsMB(__dirname + '/public/downloads/day' + all[index]["day"] + '.zip') * 10 ) / 10,
+//     });
+//     dayEntry.save();
+
+//     // Output all the file sizes
+//     // console.log(fsMB(__dirname + '/public/downloads/day' + all[index]["day"] + '.zip'));
+// }
 
 // Middleware
 app.set('port', process.env.PORT || 3000);
@@ -80,9 +104,26 @@ app.get('/', function(req, res) {
     res.render('index.html');
 });
 
-// app.get('/404', function(req, res) {
-//     res.render('404.html');
-// });
+// Pass Data for UI Rendering
+app.get('/UIs', function(req, res) {
+    day.find({}, function(err, UIs) {
+        var all = [];
+
+        var index = 0;
+        UIs.forEach(function(ui) {
+            var entry = {};
+            entry["day"] = ui["day"];
+            entry["title"] = ui["title"];
+            entry["tags"] = ui["tags"];
+            entry["downloaded"] = ui["downloaded"];
+            entry["size"] = ui["size"];
+            all[index++] = entry;
+            console.log(entry);
+        });
+
+        res.send(all);  
+    });
+});
 
 // Requesting Download
 app.post('/download', function(req, res, next) {
@@ -167,7 +208,6 @@ app.get('/download/:token', function(req, res) {
 
 app.use(function(req, res, next){
     res.render('404.html');
-    // res.render('mailchimp.html');
 });
 
 app.listen(app.get('port'), function() {

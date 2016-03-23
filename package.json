@@ -9,6 +9,7 @@
     "async": "^1.5.2",
     "body-parser": "~1.13.2",
     "express": "~4.13.1",
+    "fs": "0.0.2",
     "mongoose": "^4.4.7",
     "mongoose-ttl": "0.0.3",
     "morgan": "~1.6.1",
