@@ -3,6 +3,7 @@ html, body {
 	@include zero-box;
 	@include background($color-mineshaft);
 	@include scrollbars(.5em, $color-dustygray);
+	overflow-x: hidden;
 }
 
 .display-none {

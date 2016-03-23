@@ -42,21 +42,24 @@
 /// @param {Color} $foreground-color - Scrollbar's color
 /// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
 @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 25%)) {
-	::-webkit-scrollbar {
-		width:  $size;
-		height: $size;
+	@media screen and (min-device-width: $bp-lg) {
+		::-webkit-scrollbar {
+			width:  $size;
+			height: $size;
+		}
+		
+		::-webkit-scrollbar-thumb {
+			background: $foreground-color;
+		}
+
+		::-webkit-scrollbar-track {
+			background: $background-color;
+		}
+
+		body {
+			scrollbar-face-color: $foreground-color;
+			scrollbar-track-color: $background-color;
+		}
 	}
 
-	::-webkit-scrollbar-thumb {
-		background: $foreground-color;
-	}
-
-	::-webkit-scrollbar-track {
-		background: $background-color;
-	}
-
-	body {
-		scrollbar-face-color: $foreground-color;
-		scrollbar-track-color: $background-color;
-	}
 }
