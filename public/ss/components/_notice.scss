@@ -1,0 +1,12 @@
+.notice {
+	@include size(100% auto);
+	@include background($color-mineshaft);
+	@include margin(0);
+	@include padding(em(3px) 0);
+	color: $color-white;
+	text-align: center;
+
+	p {
+		@include font-sw(em(16px));
+	}
+}

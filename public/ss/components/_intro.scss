@@ -26,6 +26,10 @@
 		@include margin(em(10px) auto 0);
 		color: $color-boulder;
 	}	
+
+	.profile-link:hover {
+		opacity: 1;
+	}
 }
 
 .social {
