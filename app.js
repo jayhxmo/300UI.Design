@@ -26,7 +26,7 @@ var app = express();
 // Initialize Emailng System 
 var transport = nodemailer.createTransport(mandrillTransport({
     auth: {
-        apiKey: 'iG5PHiQedDh7TXuHnMVX_g'
+        apiKey: process.env.MANDRILLAPIKEY
     }
 }));
 
@@ -56,7 +56,7 @@ var daySchema = new mongoose.Schema({
 var vip = mongoose.model('downloads', vipSchema);
 var records = mongoose.model('users', recordsSchema);
 var day = mongoose.model('days', daySchema);
-mongoose.connect('mongodb://demo:pw@ds015849.mlab.com:15849/300ui-in-300days'); // update username / pw later, and delete demo account
+mongoose.connect('mongodb://' + process.env.MONGOUSER + ':' + process.env.MONGOPW' + @ds015849.mlab.com:15849/300ui-in-300days');
 
 /****************************************************
 *****   D O     N O T     U N C O M M M E N T   *****
