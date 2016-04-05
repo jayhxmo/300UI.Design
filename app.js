@@ -79,7 +79,7 @@ mongoose.connect('mongodb://demo:pw@ds015849.mlab.com:15849/300ui-in-300days'); 
 //     dayEntry.save();
 
 //     // Output all the file sizes
-//     // console.log(fsMB(__dirname + '/public/downloads/day' + all[index]["day"] + '.zip'));
+//     console.log(fsMB(__dirname + '/public/downloads/day' + all[index]["day"] + '.zip'));
 // }
 
 // Middleware
