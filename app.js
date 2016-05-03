@@ -17,18 +17,27 @@ var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
-var mandrillTransport = require('nodemailer-mandrill-transport');
+var sgTransport = require('nodemailer-sendgrid-transport');
+// var mandrillTransport = require('nodemailer-mandrill-transport');
 var nunjucks = require('nunjucks');
 var ttl = require('mongoose-ttl');
 
 var app = express();
 
 // Initialize Emailng System 
-var transport = nodemailer.createTransport(mandrillTransport({
+var options = {
     auth: {
-        apiKey: process.env.MANDRILLAPIKEY
+        api_user: process.env.SENDGRID_USER,
+        api_key: process.env.SENDGRID_PW
     }
-}));
+}
+var mailer = nodemailer.createTransport(sgTransport(options));
+
+// var transport = nodemailer.createTransport(mandrillTransport({
+//     auth: {
+//         apiKey: process.env.MANDRILLAPIKEY
+//     }
+// }));
 
 // Setup MongoDB
 var vipSchema = new mongoose.Schema({
@@ -157,8 +166,7 @@ app.post('/download', function(req, res, next) {
             day.findOne({ day: req.body.day }, function(err, token) {
                 var uiTitle = token.title;
 
-                console.log('emailing');
-                transport.sendMail({
+                mailer.sendMail({
                     from: '300 UI in 300 Days <download@300ui.design>',
                     to: req.body.email,
                     subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
