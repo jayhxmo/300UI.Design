@@ -170,7 +170,7 @@ app.post('/download', function(req, res, next) {
                     to: req.body.email,
                     subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
                     html: downloadEmail[0] + req.body.day + ' - ' + uiTitle +
-                          downloadEmail[1] + 'https://raw.githubusercontent.com/jayhxmo/300UI.Design/master/images/UIs/retina/Day%20' + req.body.day +'%20-%20UI.jpg' +
+                          downloadEmail[1] + 'https://raw.githubusercontent.com/jayhxmo/300UI.Design/master/public/images/UIs/retina/Day%20' + req.body.day +'%20-%20UI.jpg' +
                           downloadEmail[2] + 'http://300ui.design/download/' + linkToken + 
                           downloadEmail[3]
                 },
