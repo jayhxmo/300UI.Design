@@ -27,8 +27,7 @@ var app = express();
 // Initialize Emailng System 
 var options = {
     auth: {
-        api_user: process.env.SENDGRID_USER,
-        api_key: process.env.SENDGRID_PW
+        api_key: process.env.SENDGRID_API_KEY
     }
 }
 var mailer = nodemailer.createTransport(sgTransport(options));
