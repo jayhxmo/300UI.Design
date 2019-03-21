@@ -1,11 +1,11 @@
-var downloadEmail = [    
-    '<!DOCTYPE html><html lang=\"en\"><head><meta name=\"viewport\" content=\"width=device-width, initial scale=1.0\"/><link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\"><style>@media only screen and (max-width: 1000px){h1{font-size: 28px !important;}h3{font-size: 18px !important;}}</style></head><body><div style=\"text-align: center; font-family: \'Helvetica\', \'Arial\', sans-serif;\"><center><h1 style=\"font-size: 54px; font-weight: bold;\">300 UI in 300 Days</h1><h3 style=\"font-size: 24px;\">Day ', 
+var downloadEmail = [
+    '<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial scale=1.0"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><style>@media only screen and (max-width: 1000px){h1{font-size: 28px !important;}h3{font-size: 18px !important;}}</style></head><body><div style="text-align: center; font-family: \'Helvetica\', \'Arial\', sans-serif;"><center><h1 style="font-size: 54px; font-weight: bold;">300 UI in 300 Days</h1><h3 style="font-size: 24px;">Day ',
     // [day count] - [ui title]
-    '</h3><img src=\"',
+    '</h3><img src="',
     // ui source
-    '\" style=\"display: block; width: 540px; max-width: 100%; margin: 10px auto;\"><a href=\"',
+    '" style="display: block; width: 540px; max-width: 100%; margin: 10px auto;"><a href="',
     // download link
-    '\" style=\"display: block; width: 200px; height: 50px; border: 0; border-radius: 50px; background: #229aff; color: #fff; font-family: \'Helvetica\', \'Arial\', sans-serif; font-weight: bold; margin: 15px auto 7px; box-shadow: 0 5px 30px #229aff; line-height: 50px; text-decoration: none;\">DOWNLOAD</a><h6 style=\"font-size: 10px; margin: 15px auto 0 auto;\">It\'s also <a href=\"https://github.com/jayhxmo/300UI-in-300Days\">open source</a></h6><ul style=\"list-style: none; margin: 50px auto 0; display: inline-block; padding: 0;\"> <li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://twitter.com/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/twitter.png\" alt=\"\"></a></li><li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://dribbble.com/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/dribbble.png\" alt=\"\"></a></li><li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://www.behance.net/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/behance.png\" alt=\"\"></a></li><li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://www.github.com/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/github.png\" alt=\"\"></a></li><li style=\"display: inline-block; margin: 0 13px;\"><a href=\"https://www.linkedin.com/in/jayhxmo\" target=\"_blank\" style=\"color: #555;\"><img src=\"https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/linkedin.png\" alt=\"\"></a></li></center></ul></div></body></html>'
+    '" style="display: block; width: 200px; height: 50px; border: 0; border-radius: 50px; background: #229aff; color: #fff; font-family: \'Helvetica\', \'Arial\', sans-serif; font-weight: bold; margin: 15px auto 7px; box-shadow: 0 5px 30px #229aff; line-height: 50px; text-decoration: none;">DOWNLOAD</a><h6 style="font-size: 10px; margin: 15px auto 0 auto;">It\'s also <a href="https://github.com/jayhxmo/300UI-in-300Days">open source</a></h6><ul style="list-style: none; margin: 50px auto 0; display: inline-block; padding: 0;"> <li style="display: inline-block; margin: 0 13px;"><a href="https://twitter.com/jayhxmo" target="_blank" style="color: #555;"><img src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/twitter.png" alt=""></a></li><li style="display: inline-block; margin: 0 13px;"><a href="https://dribbble.com/jayhxmo" target="_blank" style="color: #555;"><img src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/dribbble.png" alt=""></a></li><li style="display: inline-block; margin: 0 13px;"><a href="https://www.behance.net/jayhxmo" target="_blank" style="color: #555;"><img src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/behance.png" alt=""></a></li><li style="display: inline-block; margin: 0 13px;"><a href="https://www.github.com/jayhxmo" target="_blank" style="color: #555;"><img src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/github.png" alt=""></a></li><li style="display: inline-block; margin: 0 13px;"><a href="https://www.linkedin.com/in/jayhxmo" target="_blank" style="color: #555;"><img src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/24/linkedin.png" alt=""></a></li></center></ul></div></body></html>'
 ];
 
 var mongoose = require('mongoose');
@@ -24,12 +24,12 @@ var ttl = require('mongoose-ttl');
 
 var app = express();
 
-// Initialize Emailng System 
+// Initialize Emailng System
 var options = {
     auth: {
         api_key: process.env.SENDGRID_API_KEY
     }
-}
+};
 var mailer = nodemailer.createTransport(sgTransport(options));
 
 // var transport = nodemailer.createTransport(mandrillTransport({
@@ -64,11 +64,22 @@ var daySchema = new mongoose.Schema({
 var vip = mongoose.model('downloads', vipSchema);
 var records = mongoose.model('users', recordsSchema);
 var day = mongoose.model('days', daySchema);
-mongoose.connect('mongodb://' + process.env.MONGOUSER + ':' + process.env.MONGOPW + '@ds015849.mlab.com:15849/300ui-in-300days');
+
+mongoose.Promise = require('bluebird');
+mongoose.connect(
+    'mongodb://' +
+        process.env.UIPROJECT_DB_USER +
+        // process.env.MONGOUSER +
+        ':' +
+        process.env.UIPROJECT_DB_PW +
+        // process.env.MONGOPW +
+        '@ds015849.mlab.com:15849/300ui-in-300days',
+    { useMongoClient: true }
+);
 
 /****************************************************
-*****   D O     N O T     U N C O M M M E N T   *****
-****************************************************/
+ *****   D O     N O T     U N C O M M M E N T   *****
+ ****************************************************/
 // function fsMB(filename) {
 //     var stats = fs.statSync(filename)
 //     var fileSizeInBytes = stats["size"]
@@ -114,80 +125,94 @@ app.get('/', function(req, res) {
 
 // Pass Data for UI Rendering
 app.get('/UIs', function(req, res) {
-    day.find().sort([['day', -1]]).exec(function(error, UIs) {
-        var all = [];
+    day.find()
+        .sort([['day', -1]])
+        .exec(function(error, UIs) {
+            var all = [];
 
-        var index = 0;
-        UIs.forEach(function(ui) {
-            var entry = {};
-            entry["day"] = ui["day"];
-            entry["title"] = ui["title"];
-            entry["tags"] = ui["tags"];
-            entry["downloaded"] = ui["downloaded"];
-            entry["size"] = ui["size"];
-            all[index++] = entry;
-            console.log(entry);
+            var index = 0;
+            UIs.forEach(function(ui) {
+                var entry = {};
+                entry['day'] = ui['day'];
+                entry['title'] = ui['title'];
+                entry['tags'] = ui['tags'];
+                entry['downloaded'] = ui['downloaded'];
+                entry['size'] = ui['size'];
+                all[index++] = entry;
+                console.log(entry);
+            });
+
+            res.send(all);
         });
-
-        res.send(all);  
-    });
 });
 
 // Requesting Download
 app.post('/download', function(req, res, next) {
-    async.waterfall([
-        function(done) {
-            crypto.randomBytes(7, function(err, buf) {
-                var token = buf.toString('hex');
-                done(err, token);
-            });
-        },
-        function(token, done) {
-            // Add New VIP Entry
-            var newVIP = new vip({
-                email: req.body.email,
-                day: req.body.day,
-                linkToken: token
-            });
-            newVIP.save();
-
-            var newUser = new records({
-                email: req.body.email,
-                day: req.body.day,
-                linkToken: token
-            });
-            newUser.save();
-
-            done(null, token, vip);
-        },
-        function(token, user, done) {
-            var linkToken = token;
-            day.findOne({ day: req.body.day }, function(err, token) {
-                var uiTitle = token.title;
-
-                mailer.sendMail({
-                    from: '300 UI in 300 Days <download@300ui.design>',
-                    to: req.body.email,
-                    subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
-                    html: downloadEmail[0] + req.body.day + ' - ' + uiTitle +
-                          downloadEmail[1] + 'https://raw.githubusercontent.com/jayhxmo/300UI.Design/master/public/images/UIs/retina/Day%20' + req.body.day +'%20-%20UI.jpg' +
-                          downloadEmail[2] + 'http://300ui.design/download/' + linkToken + 
-                          downloadEmail[3]
-                },
-                function(err, info) {
-                    if (err) {
-                        res.sendStatus(500);
-                    } 
-
-                    else {
-                        res.sendStatus(200);
-                    }
+    async.waterfall(
+        [
+            function(done) {
+                crypto.randomBytes(7, function(err, buf) {
+                    var token = buf.toString('hex');
+                    done(err, token);
                 });
-            });
+            },
+            function(token, done) {
+                // Add New VIP Entry
+                var newVIP = new vip({
+                    email: req.body.email,
+                    day: req.body.day,
+                    linkToken: token
+                });
+                newVIP.save();
+
+                var newUser = new records({
+                    email: req.body.email,
+                    day: req.body.day,
+                    linkToken: token
+                });
+                newUser.save();
+
+                done(null, token, vip);
+            },
+            function(token, user, done) {
+                var linkToken = token;
+                day.findOne({ day: req.body.day }, function(err, token) {
+                    var uiTitle = token.title;
+
+                    mailer.sendMail(
+                        {
+                            from: '300 UI in 300 Days <download@300ui.design>',
+                            to: req.body.email,
+                            subject: 'Download: Day ' + req.body.day + ' - ' + uiTitle,
+                            html:
+                                downloadEmail[0] +
+                                req.body.day +
+                                ' - ' +
+                                uiTitle +
+                                downloadEmail[1] +
+                                'https://raw.githubusercontent.com/jayhxmo/300UI.Design/master/public/images/UIs/retina/Day%20' +
+                                req.body.day +
+                                '%20-%20UI.jpg' +
+                                downloadEmail[2] +
+                                'http://300ui.design/download/' +
+                                linkToken +
+                                downloadEmail[3]
+                        },
+                        function(err, info) {
+                            if (err) {
+                                res.sendStatus(500);
+                            } else {
+                                res.sendStatus(200);
+                            }
+                        }
+                    );
+                });
+            }
+        ],
+        function(err) {
+            if (err) return next(err);
         }
-    ], function(err) {
-        if (err) return next(err);
-    });
+    );
 });
 
 app.get('/download/:token', function(req, res) {
@@ -196,24 +221,20 @@ app.get('/download/:token', function(req, res) {
             records.findOne({ linkToken: req.params.token }, function(err, result) {
                 if (!result) {
                     res.redirect('/404');
-                }
-
-                else {
-                    res.render('expired.html', { "day": result.day });
+                } else {
+                    res.render('expired.html', { day: result.day });
                 }
             });
-        }
-
-        else {
+        } else {
             day.findOne({ day: token.day }, function(err, result) {
-                res.render('download.html', { "day": token.day, "email": token.email, "title": result.title });
-                day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function (err, doc) {});
+                res.render('download.html', { day: token.day, email: token.email, title: result.title });
+                day.findOneAndUpdate({ day: token.day }, { $inc: { downloaded: 1 } }, function(err, doc) {});
             });
         }
     });
 });
 
-app.use(function(req, res, next){
+app.use(function(req, res, next) {
     res.render('404.html');
 });
 
