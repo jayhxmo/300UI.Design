@@ -1,5 +1,5 @@
 {
-    "version": 1,
+    "version": 2,
     "name": "300UI.Design",
     "builds": [
         { "src": "app.js", "use": "@now/node" }
