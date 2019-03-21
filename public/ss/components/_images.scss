@@ -1,23 +1,23 @@
 @for $i from 1 through 100 {
-    #day-#{$i} {
-		@include background(url("../images/UIs/reg/Day #{$i} - UI.jpg"));
+	#day-#{$i} {
+		@include background(url('../images/UIs/reg/Day #{$i} - UI.jpg'));
 
-		@media only screen and (min-width: 2049px) { //2048px + 1px
-			@include background(url("../images/UIs/retina/Day #{$i} - UI.jpg"));
+		@media only screen and (min-width: 1440px) {
+			@include background(url('../images/UIs/retina/Day #{$i} - UI.jpg'));
 		}
 
-		@media only screen and (min-width: 2881px) { //2880px + 1px
-			@include background(url("../images/UIs/4k/Day #{$i} - UI.jpg"));
-		}
+		// @media only screen and (min-width: 2881px) { //2880px + 1px
+		// 	@include background(url("../images/UIs/4k/Day #{$i} - UI.jpg"));
+		// }
 
-		@media only screen and (min-width: 4097px) { //4096px + 1px
-			@include background(url("../images/UIs/full/Day #{$i} - UI.jpg"));
+		@media only screen and (min-width: 1920px) {
+			@include background(url('../images/UIs/full/Day #{$i} - UI.jpg'));
 		}
-    }
+	}
 }
 
 @for $i from 1 through 100 {
-    .UI:nth-child(#{$i}) {
+	.UI:nth-child(#{$i}) {
 		animation-delay: 175ms + ($i * 125ms);
-    }
+	}
 }
