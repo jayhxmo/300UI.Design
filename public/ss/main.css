@@ -956,10 +956,6 @@ button.view {
 #day-1 {
   background: url("../images/UIs/reg/Day 1 - UI.jpg");
   background: url("../images/UIs/reg/Day 1 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-1 {
-      background: url("../images/UIs/retina/Day 1 - UI.jpg");
-      background: url("../images/UIs/retina/Day 1 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-1 {
       background: url("../images/UIs/full/Day 1 - UI.jpg");
@@ -968,10 +964,6 @@ button.view {
 #day-2 {
   background: url("../images/UIs/reg/Day 2 - UI.jpg");
   background: url("../images/UIs/reg/Day 2 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-2 {
-      background: url("../images/UIs/retina/Day 2 - UI.jpg");
-      background: url("../images/UIs/retina/Day 2 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-2 {
       background: url("../images/UIs/full/Day 2 - UI.jpg");
@@ -980,10 +972,6 @@ button.view {
 #day-3 {
   background: url("../images/UIs/reg/Day 3 - UI.jpg");
   background: url("../images/UIs/reg/Day 3 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-3 {
-      background: url("../images/UIs/retina/Day 3 - UI.jpg");
-      background: url("../images/UIs/retina/Day 3 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-3 {
       background: url("../images/UIs/full/Day 3 - UI.jpg");
@@ -992,10 +980,6 @@ button.view {
 #day-4 {
   background: url("../images/UIs/reg/Day 4 - UI.jpg");
   background: url("../images/UIs/reg/Day 4 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-4 {
-      background: url("../images/UIs/retina/Day 4 - UI.jpg");
-      background: url("../images/UIs/retina/Day 4 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-4 {
       background: url("../images/UIs/full/Day 4 - UI.jpg");
@@ -1004,10 +988,6 @@ button.view {
 #day-5 {
   background: url("../images/UIs/reg/Day 5 - UI.jpg");
   background: url("../images/UIs/reg/Day 5 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-5 {
-      background: url("../images/UIs/retina/Day 5 - UI.jpg");
-      background: url("../images/UIs/retina/Day 5 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-5 {
       background: url("../images/UIs/full/Day 5 - UI.jpg");
@@ -1016,10 +996,6 @@ button.view {
 #day-6 {
   background: url("../images/UIs/reg/Day 6 - UI.jpg");
   background: url("../images/UIs/reg/Day 6 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-6 {
-      background: url("../images/UIs/retina/Day 6 - UI.jpg");
-      background: url("../images/UIs/retina/Day 6 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-6 {
       background: url("../images/UIs/full/Day 6 - UI.jpg");
@@ -1028,10 +1004,6 @@ button.view {
 #day-7 {
   background: url("../images/UIs/reg/Day 7 - UI.jpg");
   background: url("../images/UIs/reg/Day 7 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-7 {
-      background: url("../images/UIs/retina/Day 7 - UI.jpg");
-      background: url("../images/UIs/retina/Day 7 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-7 {
       background: url("../images/UIs/full/Day 7 - UI.jpg");
@@ -1040,10 +1012,6 @@ button.view {
 #day-8 {
   background: url("../images/UIs/reg/Day 8 - UI.jpg");
   background: url("../images/UIs/reg/Day 8 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-8 {
-      background: url("../images/UIs/retina/Day 8 - UI.jpg");
-      background: url("../images/UIs/retina/Day 8 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-8 {
       background: url("../images/UIs/full/Day 8 - UI.jpg");
@@ -1052,10 +1020,6 @@ button.view {
 #day-9 {
   background: url("../images/UIs/reg/Day 9 - UI.jpg");
   background: url("../images/UIs/reg/Day 9 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-9 {
-      background: url("../images/UIs/retina/Day 9 - UI.jpg");
-      background: url("../images/UIs/retina/Day 9 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-9 {
       background: url("../images/UIs/full/Day 9 - UI.jpg");
@@ -1064,10 +1028,6 @@ button.view {
 #day-10 {
   background: url("../images/UIs/reg/Day 10 - UI.jpg");
   background: url("../images/UIs/reg/Day 10 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-10 {
-      background: url("../images/UIs/retina/Day 10 - UI.jpg");
-      background: url("../images/UIs/retina/Day 10 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-10 {
       background: url("../images/UIs/full/Day 10 - UI.jpg");
@@ -1076,10 +1036,6 @@ button.view {
 #day-11 {
   background: url("../images/UIs/reg/Day 11 - UI.jpg");
   background: url("../images/UIs/reg/Day 11 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-11 {
-      background: url("../images/UIs/retina/Day 11 - UI.jpg");
-      background: url("../images/UIs/retina/Day 11 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-11 {
       background: url("../images/UIs/full/Day 11 - UI.jpg");
@@ -1088,10 +1044,6 @@ button.view {
 #day-12 {
   background: url("../images/UIs/reg/Day 12 - UI.jpg");
   background: url("../images/UIs/reg/Day 12 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-12 {
-      background: url("../images/UIs/retina/Day 12 - UI.jpg");
-      background: url("../images/UIs/retina/Day 12 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-12 {
       background: url("../images/UIs/full/Day 12 - UI.jpg");
@@ -1100,10 +1052,6 @@ button.view {
 #day-13 {
   background: url("../images/UIs/reg/Day 13 - UI.jpg");
   background: url("../images/UIs/reg/Day 13 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-13 {
-      background: url("../images/UIs/retina/Day 13 - UI.jpg");
-      background: url("../images/UIs/retina/Day 13 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-13 {
       background: url("../images/UIs/full/Day 13 - UI.jpg");
@@ -1112,10 +1060,6 @@ button.view {
 #day-14 {
   background: url("../images/UIs/reg/Day 14 - UI.jpg");
   background: url("../images/UIs/reg/Day 14 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-14 {
-      background: url("../images/UIs/retina/Day 14 - UI.jpg");
-      background: url("../images/UIs/retina/Day 14 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-14 {
       background: url("../images/UIs/full/Day 14 - UI.jpg");
@@ -1124,10 +1068,6 @@ button.view {
 #day-15 {
   background: url("../images/UIs/reg/Day 15 - UI.jpg");
   background: url("../images/UIs/reg/Day 15 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-15 {
-      background: url("../images/UIs/retina/Day 15 - UI.jpg");
-      background: url("../images/UIs/retina/Day 15 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-15 {
       background: url("../images/UIs/full/Day 15 - UI.jpg");
@@ -1136,10 +1076,6 @@ button.view {
 #day-16 {
   background: url("../images/UIs/reg/Day 16 - UI.jpg");
   background: url("../images/UIs/reg/Day 16 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-16 {
-      background: url("../images/UIs/retina/Day 16 - UI.jpg");
-      background: url("../images/UIs/retina/Day 16 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-16 {
       background: url("../images/UIs/full/Day 16 - UI.jpg");
@@ -1148,10 +1084,6 @@ button.view {
 #day-17 {
   background: url("../images/UIs/reg/Day 17 - UI.jpg");
   background: url("../images/UIs/reg/Day 17 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-17 {
-      background: url("../images/UIs/retina/Day 17 - UI.jpg");
-      background: url("../images/UIs/retina/Day 17 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-17 {
       background: url("../images/UIs/full/Day 17 - UI.jpg");
@@ -1160,10 +1092,6 @@ button.view {
 #day-18 {
   background: url("../images/UIs/reg/Day 18 - UI.jpg");
   background: url("../images/UIs/reg/Day 18 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-18 {
-      background: url("../images/UIs/retina/Day 18 - UI.jpg");
-      background: url("../images/UIs/retina/Day 18 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-18 {
       background: url("../images/UIs/full/Day 18 - UI.jpg");
@@ -1172,10 +1100,6 @@ button.view {
 #day-19 {
   background: url("../images/UIs/reg/Day 19 - UI.jpg");
   background: url("../images/UIs/reg/Day 19 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-19 {
-      background: url("../images/UIs/retina/Day 19 - UI.jpg");
-      background: url("../images/UIs/retina/Day 19 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-19 {
       background: url("../images/UIs/full/Day 19 - UI.jpg");
@@ -1184,10 +1108,6 @@ button.view {
 #day-20 {
   background: url("../images/UIs/reg/Day 20 - UI.jpg");
   background: url("../images/UIs/reg/Day 20 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-20 {
-      background: url("../images/UIs/retina/Day 20 - UI.jpg");
-      background: url("../images/UIs/retina/Day 20 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-20 {
       background: url("../images/UIs/full/Day 20 - UI.jpg");
@@ -1196,10 +1116,6 @@ button.view {
 #day-21 {
   background: url("../images/UIs/reg/Day 21 - UI.jpg");
   background: url("../images/UIs/reg/Day 21 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-21 {
-      background: url("../images/UIs/retina/Day 21 - UI.jpg");
-      background: url("../images/UIs/retina/Day 21 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-21 {
       background: url("../images/UIs/full/Day 21 - UI.jpg");
@@ -1208,10 +1124,6 @@ button.view {
 #day-22 {
   background: url("../images/UIs/reg/Day 22 - UI.jpg");
   background: url("../images/UIs/reg/Day 22 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-22 {
-      background: url("../images/UIs/retina/Day 22 - UI.jpg");
-      background: url("../images/UIs/retina/Day 22 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-22 {
       background: url("../images/UIs/full/Day 22 - UI.jpg");
@@ -1220,10 +1132,6 @@ button.view {
 #day-23 {
   background: url("../images/UIs/reg/Day 23 - UI.jpg");
   background: url("../images/UIs/reg/Day 23 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-23 {
-      background: url("../images/UIs/retina/Day 23 - UI.jpg");
-      background: url("../images/UIs/retina/Day 23 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-23 {
       background: url("../images/UIs/full/Day 23 - UI.jpg");
@@ -1232,10 +1140,6 @@ button.view {
 #day-24 {
   background: url("../images/UIs/reg/Day 24 - UI.jpg");
   background: url("../images/UIs/reg/Day 24 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-24 {
-      background: url("../images/UIs/retina/Day 24 - UI.jpg");
-      background: url("../images/UIs/retina/Day 24 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-24 {
       background: url("../images/UIs/full/Day 24 - UI.jpg");
@@ -1244,10 +1148,6 @@ button.view {
 #day-25 {
   background: url("../images/UIs/reg/Day 25 - UI.jpg");
   background: url("../images/UIs/reg/Day 25 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-25 {
-      background: url("../images/UIs/retina/Day 25 - UI.jpg");
-      background: url("../images/UIs/retina/Day 25 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-25 {
       background: url("../images/UIs/full/Day 25 - UI.jpg");
@@ -1256,10 +1156,6 @@ button.view {
 #day-26 {
   background: url("../images/UIs/reg/Day 26 - UI.jpg");
   background: url("../images/UIs/reg/Day 26 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-26 {
-      background: url("../images/UIs/retina/Day 26 - UI.jpg");
-      background: url("../images/UIs/retina/Day 26 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-26 {
       background: url("../images/UIs/full/Day 26 - UI.jpg");
@@ -1268,10 +1164,6 @@ button.view {
 #day-27 {
   background: url("../images/UIs/reg/Day 27 - UI.jpg");
   background: url("../images/UIs/reg/Day 27 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-27 {
-      background: url("../images/UIs/retina/Day 27 - UI.jpg");
-      background: url("../images/UIs/retina/Day 27 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-27 {
       background: url("../images/UIs/full/Day 27 - UI.jpg");
@@ -1280,10 +1172,6 @@ button.view {
 #day-28 {
   background: url("../images/UIs/reg/Day 28 - UI.jpg");
   background: url("../images/UIs/reg/Day 28 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-28 {
-      background: url("../images/UIs/retina/Day 28 - UI.jpg");
-      background: url("../images/UIs/retina/Day 28 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-28 {
       background: url("../images/UIs/full/Day 28 - UI.jpg");
@@ -1292,10 +1180,6 @@ button.view {
 #day-29 {
   background: url("../images/UIs/reg/Day 29 - UI.jpg");
   background: url("../images/UIs/reg/Day 29 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-29 {
-      background: url("../images/UIs/retina/Day 29 - UI.jpg");
-      background: url("../images/UIs/retina/Day 29 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-29 {
       background: url("../images/UIs/full/Day 29 - UI.jpg");
@@ -1304,10 +1188,6 @@ button.view {
 #day-30 {
   background: url("../images/UIs/reg/Day 30 - UI.jpg");
   background: url("../images/UIs/reg/Day 30 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-30 {
-      background: url("../images/UIs/retina/Day 30 - UI.jpg");
-      background: url("../images/UIs/retina/Day 30 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-30 {
       background: url("../images/UIs/full/Day 30 - UI.jpg");
@@ -1316,10 +1196,6 @@ button.view {
 #day-31 {
   background: url("../images/UIs/reg/Day 31 - UI.jpg");
   background: url("../images/UIs/reg/Day 31 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-31 {
-      background: url("../images/UIs/retina/Day 31 - UI.jpg");
-      background: url("../images/UIs/retina/Day 31 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-31 {
       background: url("../images/UIs/full/Day 31 - UI.jpg");
@@ -1328,10 +1204,6 @@ button.view {
 #day-32 {
   background: url("../images/UIs/reg/Day 32 - UI.jpg");
   background: url("../images/UIs/reg/Day 32 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-32 {
-      background: url("../images/UIs/retina/Day 32 - UI.jpg");
-      background: url("../images/UIs/retina/Day 32 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-32 {
       background: url("../images/UIs/full/Day 32 - UI.jpg");
@@ -1340,10 +1212,6 @@ button.view {
 #day-33 {
   background: url("../images/UIs/reg/Day 33 - UI.jpg");
   background: url("../images/UIs/reg/Day 33 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-33 {
-      background: url("../images/UIs/retina/Day 33 - UI.jpg");
-      background: url("../images/UIs/retina/Day 33 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-33 {
       background: url("../images/UIs/full/Day 33 - UI.jpg");
@@ -1352,10 +1220,6 @@ button.view {
 #day-34 {
   background: url("../images/UIs/reg/Day 34 - UI.jpg");
   background: url("../images/UIs/reg/Day 34 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-34 {
-      background: url("../images/UIs/retina/Day 34 - UI.jpg");
-      background: url("../images/UIs/retina/Day 34 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-34 {
       background: url("../images/UIs/full/Day 34 - UI.jpg");
@@ -1364,10 +1228,6 @@ button.view {
 #day-35 {
   background: url("../images/UIs/reg/Day 35 - UI.jpg");
   background: url("../images/UIs/reg/Day 35 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-35 {
-      background: url("../images/UIs/retina/Day 35 - UI.jpg");
-      background: url("../images/UIs/retina/Day 35 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-35 {
       background: url("../images/UIs/full/Day 35 - UI.jpg");
@@ -1376,10 +1236,6 @@ button.view {
 #day-36 {
   background: url("../images/UIs/reg/Day 36 - UI.jpg");
   background: url("../images/UIs/reg/Day 36 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-36 {
-      background: url("../images/UIs/retina/Day 36 - UI.jpg");
-      background: url("../images/UIs/retina/Day 36 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-36 {
       background: url("../images/UIs/full/Day 36 - UI.jpg");
@@ -1388,10 +1244,6 @@ button.view {
 #day-37 {
   background: url("../images/UIs/reg/Day 37 - UI.jpg");
   background: url("../images/UIs/reg/Day 37 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-37 {
-      background: url("../images/UIs/retina/Day 37 - UI.jpg");
-      background: url("../images/UIs/retina/Day 37 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-37 {
       background: url("../images/UIs/full/Day 37 - UI.jpg");
@@ -1400,10 +1252,6 @@ button.view {
 #day-38 {
   background: url("../images/UIs/reg/Day 38 - UI.jpg");
   background: url("../images/UIs/reg/Day 38 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-38 {
-      background: url("../images/UIs/retina/Day 38 - UI.jpg");
-      background: url("../images/UIs/retina/Day 38 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-38 {
       background: url("../images/UIs/full/Day 38 - UI.jpg");
@@ -1412,10 +1260,6 @@ button.view {
 #day-39 {
   background: url("../images/UIs/reg/Day 39 - UI.jpg");
   background: url("../images/UIs/reg/Day 39 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-39 {
-      background: url("../images/UIs/retina/Day 39 - UI.jpg");
-      background: url("../images/UIs/retina/Day 39 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-39 {
       background: url("../images/UIs/full/Day 39 - UI.jpg");
@@ -1424,10 +1268,6 @@ button.view {
 #day-40 {
   background: url("../images/UIs/reg/Day 40 - UI.jpg");
   background: url("../images/UIs/reg/Day 40 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-40 {
-      background: url("../images/UIs/retina/Day 40 - UI.jpg");
-      background: url("../images/UIs/retina/Day 40 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-40 {
       background: url("../images/UIs/full/Day 40 - UI.jpg");
@@ -1436,10 +1276,6 @@ button.view {
 #day-41 {
   background: url("../images/UIs/reg/Day 41 - UI.jpg");
   background: url("../images/UIs/reg/Day 41 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-41 {
-      background: url("../images/UIs/retina/Day 41 - UI.jpg");
-      background: url("../images/UIs/retina/Day 41 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-41 {
       background: url("../images/UIs/full/Day 41 - UI.jpg");
@@ -1448,10 +1284,6 @@ button.view {
 #day-42 {
   background: url("../images/UIs/reg/Day 42 - UI.jpg");
   background: url("../images/UIs/reg/Day 42 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-42 {
-      background: url("../images/UIs/retina/Day 42 - UI.jpg");
-      background: url("../images/UIs/retina/Day 42 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-42 {
       background: url("../images/UIs/full/Day 42 - UI.jpg");
@@ -1460,10 +1292,6 @@ button.view {
 #day-43 {
   background: url("../images/UIs/reg/Day 43 - UI.jpg");
   background: url("../images/UIs/reg/Day 43 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-43 {
-      background: url("../images/UIs/retina/Day 43 - UI.jpg");
-      background: url("../images/UIs/retina/Day 43 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-43 {
       background: url("../images/UIs/full/Day 43 - UI.jpg");
@@ -1472,10 +1300,6 @@ button.view {
 #day-44 {
   background: url("../images/UIs/reg/Day 44 - UI.jpg");
   background: url("../images/UIs/reg/Day 44 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-44 {
-      background: url("../images/UIs/retina/Day 44 - UI.jpg");
-      background: url("../images/UIs/retina/Day 44 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-44 {
       background: url("../images/UIs/full/Day 44 - UI.jpg");
@@ -1484,10 +1308,6 @@ button.view {
 #day-45 {
   background: url("../images/UIs/reg/Day 45 - UI.jpg");
   background: url("../images/UIs/reg/Day 45 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-45 {
-      background: url("../images/UIs/retina/Day 45 - UI.jpg");
-      background: url("../images/UIs/retina/Day 45 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-45 {
       background: url("../images/UIs/full/Day 45 - UI.jpg");
@@ -1496,10 +1316,6 @@ button.view {
 #day-46 {
   background: url("../images/UIs/reg/Day 46 - UI.jpg");
   background: url("../images/UIs/reg/Day 46 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-46 {
-      background: url("../images/UIs/retina/Day 46 - UI.jpg");
-      background: url("../images/UIs/retina/Day 46 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-46 {
       background: url("../images/UIs/full/Day 46 - UI.jpg");
@@ -1508,10 +1324,6 @@ button.view {
 #day-47 {
   background: url("../images/UIs/reg/Day 47 - UI.jpg");
   background: url("../images/UIs/reg/Day 47 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-47 {
-      background: url("../images/UIs/retina/Day 47 - UI.jpg");
-      background: url("../images/UIs/retina/Day 47 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-47 {
       background: url("../images/UIs/full/Day 47 - UI.jpg");
@@ -1520,10 +1332,6 @@ button.view {
 #day-48 {
   background: url("../images/UIs/reg/Day 48 - UI.jpg");
   background: url("../images/UIs/reg/Day 48 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-48 {
-      background: url("../images/UIs/retina/Day 48 - UI.jpg");
-      background: url("../images/UIs/retina/Day 48 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-48 {
       background: url("../images/UIs/full/Day 48 - UI.jpg");
@@ -1532,10 +1340,6 @@ button.view {
 #day-49 {
   background: url("../images/UIs/reg/Day 49 - UI.jpg");
   background: url("../images/UIs/reg/Day 49 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-49 {
-      background: url("../images/UIs/retina/Day 49 - UI.jpg");
-      background: url("../images/UIs/retina/Day 49 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-49 {
       background: url("../images/UIs/full/Day 49 - UI.jpg");
@@ -1544,10 +1348,6 @@ button.view {
 #day-50 {
   background: url("../images/UIs/reg/Day 50 - UI.jpg");
   background: url("../images/UIs/reg/Day 50 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-50 {
-      background: url("../images/UIs/retina/Day 50 - UI.jpg");
-      background: url("../images/UIs/retina/Day 50 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-50 {
       background: url("../images/UIs/full/Day 50 - UI.jpg");
@@ -1556,10 +1356,6 @@ button.view {
 #day-51 {
   background: url("../images/UIs/reg/Day 51 - UI.jpg");
   background: url("../images/UIs/reg/Day 51 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-51 {
-      background: url("../images/UIs/retina/Day 51 - UI.jpg");
-      background: url("../images/UIs/retina/Day 51 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-51 {
       background: url("../images/UIs/full/Day 51 - UI.jpg");
@@ -1568,10 +1364,6 @@ button.view {
 #day-52 {
   background: url("../images/UIs/reg/Day 52 - UI.jpg");
   background: url("../images/UIs/reg/Day 52 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-52 {
-      background: url("../images/UIs/retina/Day 52 - UI.jpg");
-      background: url("../images/UIs/retina/Day 52 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-52 {
       background: url("../images/UIs/full/Day 52 - UI.jpg");
@@ -1580,10 +1372,6 @@ button.view {
 #day-53 {
   background: url("../images/UIs/reg/Day 53 - UI.jpg");
   background: url("../images/UIs/reg/Day 53 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-53 {
-      background: url("../images/UIs/retina/Day 53 - UI.jpg");
-      background: url("../images/UIs/retina/Day 53 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-53 {
       background: url("../images/UIs/full/Day 53 - UI.jpg");
@@ -1592,10 +1380,6 @@ button.view {
 #day-54 {
   background: url("../images/UIs/reg/Day 54 - UI.jpg");
   background: url("../images/UIs/reg/Day 54 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-54 {
-      background: url("../images/UIs/retina/Day 54 - UI.jpg");
-      background: url("../images/UIs/retina/Day 54 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-54 {
       background: url("../images/UIs/full/Day 54 - UI.jpg");
@@ -1604,10 +1388,6 @@ button.view {
 #day-55 {
   background: url("../images/UIs/reg/Day 55 - UI.jpg");
   background: url("../images/UIs/reg/Day 55 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-55 {
-      background: url("../images/UIs/retina/Day 55 - UI.jpg");
-      background: url("../images/UIs/retina/Day 55 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-55 {
       background: url("../images/UIs/full/Day 55 - UI.jpg");
@@ -1616,10 +1396,6 @@ button.view {
 #day-56 {
   background: url("../images/UIs/reg/Day 56 - UI.jpg");
   background: url("../images/UIs/reg/Day 56 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-56 {
-      background: url("../images/UIs/retina/Day 56 - UI.jpg");
-      background: url("../images/UIs/retina/Day 56 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-56 {
       background: url("../images/UIs/full/Day 56 - UI.jpg");
@@ -1628,10 +1404,6 @@ button.view {
 #day-57 {
   background: url("../images/UIs/reg/Day 57 - UI.jpg");
   background: url("../images/UIs/reg/Day 57 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-57 {
-      background: url("../images/UIs/retina/Day 57 - UI.jpg");
-      background: url("../images/UIs/retina/Day 57 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-57 {
       background: url("../images/UIs/full/Day 57 - UI.jpg");
@@ -1640,10 +1412,6 @@ button.view {
 #day-58 {
   background: url("../images/UIs/reg/Day 58 - UI.jpg");
   background: url("../images/UIs/reg/Day 58 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-58 {
-      background: url("../images/UIs/retina/Day 58 - UI.jpg");
-      background: url("../images/UIs/retina/Day 58 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-58 {
       background: url("../images/UIs/full/Day 58 - UI.jpg");
@@ -1652,10 +1420,6 @@ button.view {
 #day-59 {
   background: url("../images/UIs/reg/Day 59 - UI.jpg");
   background: url("../images/UIs/reg/Day 59 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-59 {
-      background: url("../images/UIs/retina/Day 59 - UI.jpg");
-      background: url("../images/UIs/retina/Day 59 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-59 {
       background: url("../images/UIs/full/Day 59 - UI.jpg");
@@ -1664,10 +1428,6 @@ button.view {
 #day-60 {
   background: url("../images/UIs/reg/Day 60 - UI.jpg");
   background: url("../images/UIs/reg/Day 60 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-60 {
-      background: url("../images/UIs/retina/Day 60 - UI.jpg");
-      background: url("../images/UIs/retina/Day 60 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-60 {
       background: url("../images/UIs/full/Day 60 - UI.jpg");
@@ -1676,10 +1436,6 @@ button.view {
 #day-61 {
   background: url("../images/UIs/reg/Day 61 - UI.jpg");
   background: url("../images/UIs/reg/Day 61 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-61 {
-      background: url("../images/UIs/retina/Day 61 - UI.jpg");
-      background: url("../images/UIs/retina/Day 61 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-61 {
       background: url("../images/UIs/full/Day 61 - UI.jpg");
@@ -1688,10 +1444,6 @@ button.view {
 #day-62 {
   background: url("../images/UIs/reg/Day 62 - UI.jpg");
   background: url("../images/UIs/reg/Day 62 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-62 {
-      background: url("../images/UIs/retina/Day 62 - UI.jpg");
-      background: url("../images/UIs/retina/Day 62 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-62 {
       background: url("../images/UIs/full/Day 62 - UI.jpg");
@@ -1700,10 +1452,6 @@ button.view {
 #day-63 {
   background: url("../images/UIs/reg/Day 63 - UI.jpg");
   background: url("../images/UIs/reg/Day 63 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-63 {
-      background: url("../images/UIs/retina/Day 63 - UI.jpg");
-      background: url("../images/UIs/retina/Day 63 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-63 {
       background: url("../images/UIs/full/Day 63 - UI.jpg");
@@ -1712,10 +1460,6 @@ button.view {
 #day-64 {
   background: url("../images/UIs/reg/Day 64 - UI.jpg");
   background: url("../images/UIs/reg/Day 64 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-64 {
-      background: url("../images/UIs/retina/Day 64 - UI.jpg");
-      background: url("../images/UIs/retina/Day 64 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-64 {
       background: url("../images/UIs/full/Day 64 - UI.jpg");
@@ -1724,10 +1468,6 @@ button.view {
 #day-65 {
   background: url("../images/UIs/reg/Day 65 - UI.jpg");
   background: url("../images/UIs/reg/Day 65 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-65 {
-      background: url("../images/UIs/retina/Day 65 - UI.jpg");
-      background: url("../images/UIs/retina/Day 65 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-65 {
       background: url("../images/UIs/full/Day 65 - UI.jpg");
@@ -1736,10 +1476,6 @@ button.view {
 #day-66 {
   background: url("../images/UIs/reg/Day 66 - UI.jpg");
   background: url("../images/UIs/reg/Day 66 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-66 {
-      background: url("../images/UIs/retina/Day 66 - UI.jpg");
-      background: url("../images/UIs/retina/Day 66 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-66 {
       background: url("../images/UIs/full/Day 66 - UI.jpg");
@@ -1748,10 +1484,6 @@ button.view {
 #day-67 {
   background: url("../images/UIs/reg/Day 67 - UI.jpg");
   background: url("../images/UIs/reg/Day 67 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-67 {
-      background: url("../images/UIs/retina/Day 67 - UI.jpg");
-      background: url("../images/UIs/retina/Day 67 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-67 {
       background: url("../images/UIs/full/Day 67 - UI.jpg");
@@ -1760,10 +1492,6 @@ button.view {
 #day-68 {
   background: url("../images/UIs/reg/Day 68 - UI.jpg");
   background: url("../images/UIs/reg/Day 68 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-68 {
-      background: url("../images/UIs/retina/Day 68 - UI.jpg");
-      background: url("../images/UIs/retina/Day 68 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-68 {
       background: url("../images/UIs/full/Day 68 - UI.jpg");
@@ -1772,10 +1500,6 @@ button.view {
 #day-69 {
   background: url("../images/UIs/reg/Day 69 - UI.jpg");
   background: url("../images/UIs/reg/Day 69 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-69 {
-      background: url("../images/UIs/retina/Day 69 - UI.jpg");
-      background: url("../images/UIs/retina/Day 69 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-69 {
       background: url("../images/UIs/full/Day 69 - UI.jpg");
@@ -1784,10 +1508,6 @@ button.view {
 #day-70 {
   background: url("../images/UIs/reg/Day 70 - UI.jpg");
   background: url("../images/UIs/reg/Day 70 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-70 {
-      background: url("../images/UIs/retina/Day 70 - UI.jpg");
-      background: url("../images/UIs/retina/Day 70 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-70 {
       background: url("../images/UIs/full/Day 70 - UI.jpg");
@@ -1796,10 +1516,6 @@ button.view {
 #day-71 {
   background: url("../images/UIs/reg/Day 71 - UI.jpg");
   background: url("../images/UIs/reg/Day 71 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-71 {
-      background: url("../images/UIs/retina/Day 71 - UI.jpg");
-      background: url("../images/UIs/retina/Day 71 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-71 {
       background: url("../images/UIs/full/Day 71 - UI.jpg");
@@ -1808,10 +1524,6 @@ button.view {
 #day-72 {
   background: url("../images/UIs/reg/Day 72 - UI.jpg");
   background: url("../images/UIs/reg/Day 72 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-72 {
-      background: url("../images/UIs/retina/Day 72 - UI.jpg");
-      background: url("../images/UIs/retina/Day 72 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-72 {
       background: url("../images/UIs/full/Day 72 - UI.jpg");
@@ -1820,10 +1532,6 @@ button.view {
 #day-73 {
   background: url("../images/UIs/reg/Day 73 - UI.jpg");
   background: url("../images/UIs/reg/Day 73 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-73 {
-      background: url("../images/UIs/retina/Day 73 - UI.jpg");
-      background: url("../images/UIs/retina/Day 73 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-73 {
       background: url("../images/UIs/full/Day 73 - UI.jpg");
@@ -1832,10 +1540,6 @@ button.view {
 #day-74 {
   background: url("../images/UIs/reg/Day 74 - UI.jpg");
   background: url("../images/UIs/reg/Day 74 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-74 {
-      background: url("../images/UIs/retina/Day 74 - UI.jpg");
-      background: url("../images/UIs/retina/Day 74 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-74 {
       background: url("../images/UIs/full/Day 74 - UI.jpg");
@@ -1844,10 +1548,6 @@ button.view {
 #day-75 {
   background: url("../images/UIs/reg/Day 75 - UI.jpg");
   background: url("../images/UIs/reg/Day 75 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-75 {
-      background: url("../images/UIs/retina/Day 75 - UI.jpg");
-      background: url("../images/UIs/retina/Day 75 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-75 {
       background: url("../images/UIs/full/Day 75 - UI.jpg");
@@ -1856,10 +1556,6 @@ button.view {
 #day-76 {
   background: url("../images/UIs/reg/Day 76 - UI.jpg");
   background: url("../images/UIs/reg/Day 76 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-76 {
-      background: url("../images/UIs/retina/Day 76 - UI.jpg");
-      background: url("../images/UIs/retina/Day 76 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-76 {
       background: url("../images/UIs/full/Day 76 - UI.jpg");
@@ -1868,10 +1564,6 @@ button.view {
 #day-77 {
   background: url("../images/UIs/reg/Day 77 - UI.jpg");
   background: url("../images/UIs/reg/Day 77 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-77 {
-      background: url("../images/UIs/retina/Day 77 - UI.jpg");
-      background: url("../images/UIs/retina/Day 77 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-77 {
       background: url("../images/UIs/full/Day 77 - UI.jpg");
@@ -1880,10 +1572,6 @@ button.view {
 #day-78 {
   background: url("../images/UIs/reg/Day 78 - UI.jpg");
   background: url("../images/UIs/reg/Day 78 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-78 {
-      background: url("../images/UIs/retina/Day 78 - UI.jpg");
-      background: url("../images/UIs/retina/Day 78 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-78 {
       background: url("../images/UIs/full/Day 78 - UI.jpg");
@@ -1892,10 +1580,6 @@ button.view {
 #day-79 {
   background: url("../images/UIs/reg/Day 79 - UI.jpg");
   background: url("../images/UIs/reg/Day 79 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-79 {
-      background: url("../images/UIs/retina/Day 79 - UI.jpg");
-      background: url("../images/UIs/retina/Day 79 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-79 {
       background: url("../images/UIs/full/Day 79 - UI.jpg");
@@ -1904,10 +1588,6 @@ button.view {
 #day-80 {
   background: url("../images/UIs/reg/Day 80 - UI.jpg");
   background: url("../images/UIs/reg/Day 80 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-80 {
-      background: url("../images/UIs/retina/Day 80 - UI.jpg");
-      background: url("../images/UIs/retina/Day 80 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-80 {
       background: url("../images/UIs/full/Day 80 - UI.jpg");
@@ -1916,10 +1596,6 @@ button.view {
 #day-81 {
   background: url("../images/UIs/reg/Day 81 - UI.jpg");
   background: url("../images/UIs/reg/Day 81 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-81 {
-      background: url("../images/UIs/retina/Day 81 - UI.jpg");
-      background: url("../images/UIs/retina/Day 81 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-81 {
       background: url("../images/UIs/full/Day 81 - UI.jpg");
@@ -1928,10 +1604,6 @@ button.view {
 #day-82 {
   background: url("../images/UIs/reg/Day 82 - UI.jpg");
   background: url("../images/UIs/reg/Day 82 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-82 {
-      background: url("../images/UIs/retina/Day 82 - UI.jpg");
-      background: url("../images/UIs/retina/Day 82 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-82 {
       background: url("../images/UIs/full/Day 82 - UI.jpg");
@@ -1940,10 +1612,6 @@ button.view {
 #day-83 {
   background: url("../images/UIs/reg/Day 83 - UI.jpg");
   background: url("../images/UIs/reg/Day 83 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-83 {
-      background: url("../images/UIs/retina/Day 83 - UI.jpg");
-      background: url("../images/UIs/retina/Day 83 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-83 {
       background: url("../images/UIs/full/Day 83 - UI.jpg");
@@ -1952,10 +1620,6 @@ button.view {
 #day-84 {
   background: url("../images/UIs/reg/Day 84 - UI.jpg");
   background: url("../images/UIs/reg/Day 84 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-84 {
-      background: url("../images/UIs/retina/Day 84 - UI.jpg");
-      background: url("../images/UIs/retina/Day 84 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-84 {
       background: url("../images/UIs/full/Day 84 - UI.jpg");
@@ -1964,10 +1628,6 @@ button.view {
 #day-85 {
   background: url("../images/UIs/reg/Day 85 - UI.jpg");
   background: url("../images/UIs/reg/Day 85 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-85 {
-      background: url("../images/UIs/retina/Day 85 - UI.jpg");
-      background: url("../images/UIs/retina/Day 85 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-85 {
       background: url("../images/UIs/full/Day 85 - UI.jpg");
@@ -1976,10 +1636,6 @@ button.view {
 #day-86 {
   background: url("../images/UIs/reg/Day 86 - UI.jpg");
   background: url("../images/UIs/reg/Day 86 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-86 {
-      background: url("../images/UIs/retina/Day 86 - UI.jpg");
-      background: url("../images/UIs/retina/Day 86 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-86 {
       background: url("../images/UIs/full/Day 86 - UI.jpg");
@@ -1988,10 +1644,6 @@ button.view {
 #day-87 {
   background: url("../images/UIs/reg/Day 87 - UI.jpg");
   background: url("../images/UIs/reg/Day 87 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-87 {
-      background: url("../images/UIs/retina/Day 87 - UI.jpg");
-      background: url("../images/UIs/retina/Day 87 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-87 {
       background: url("../images/UIs/full/Day 87 - UI.jpg");
@@ -2000,10 +1652,6 @@ button.view {
 #day-88 {
   background: url("../images/UIs/reg/Day 88 - UI.jpg");
   background: url("../images/UIs/reg/Day 88 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-88 {
-      background: url("../images/UIs/retina/Day 88 - UI.jpg");
-      background: url("../images/UIs/retina/Day 88 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-88 {
       background: url("../images/UIs/full/Day 88 - UI.jpg");
@@ -2012,10 +1660,6 @@ button.view {
 #day-89 {
   background: url("../images/UIs/reg/Day 89 - UI.jpg");
   background: url("../images/UIs/reg/Day 89 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-89 {
-      background: url("../images/UIs/retina/Day 89 - UI.jpg");
-      background: url("../images/UIs/retina/Day 89 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-89 {
       background: url("../images/UIs/full/Day 89 - UI.jpg");
@@ -2024,10 +1668,6 @@ button.view {
 #day-90 {
   background: url("../images/UIs/reg/Day 90 - UI.jpg");
   background: url("../images/UIs/reg/Day 90 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-90 {
-      background: url("../images/UIs/retina/Day 90 - UI.jpg");
-      background: url("../images/UIs/retina/Day 90 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-90 {
       background: url("../images/UIs/full/Day 90 - UI.jpg");
@@ -2036,10 +1676,6 @@ button.view {
 #day-91 {
   background: url("../images/UIs/reg/Day 91 - UI.jpg");
   background: url("../images/UIs/reg/Day 91 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-91 {
-      background: url("../images/UIs/retina/Day 91 - UI.jpg");
-      background: url("../images/UIs/retina/Day 91 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-91 {
       background: url("../images/UIs/full/Day 91 - UI.jpg");
@@ -2048,10 +1684,6 @@ button.view {
 #day-92 {
   background: url("../images/UIs/reg/Day 92 - UI.jpg");
   background: url("../images/UIs/reg/Day 92 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-92 {
-      background: url("../images/UIs/retina/Day 92 - UI.jpg");
-      background: url("../images/UIs/retina/Day 92 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-92 {
       background: url("../images/UIs/full/Day 92 - UI.jpg");
@@ -2060,10 +1692,6 @@ button.view {
 #day-93 {
   background: url("../images/UIs/reg/Day 93 - UI.jpg");
   background: url("../images/UIs/reg/Day 93 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-93 {
-      background: url("../images/UIs/retina/Day 93 - UI.jpg");
-      background: url("../images/UIs/retina/Day 93 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-93 {
       background: url("../images/UIs/full/Day 93 - UI.jpg");
@@ -2072,10 +1700,6 @@ button.view {
 #day-94 {
   background: url("../images/UIs/reg/Day 94 - UI.jpg");
   background: url("../images/UIs/reg/Day 94 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-94 {
-      background: url("../images/UIs/retina/Day 94 - UI.jpg");
-      background: url("../images/UIs/retina/Day 94 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-94 {
       background: url("../images/UIs/full/Day 94 - UI.jpg");
@@ -2084,10 +1708,6 @@ button.view {
 #day-95 {
   background: url("../images/UIs/reg/Day 95 - UI.jpg");
   background: url("../images/UIs/reg/Day 95 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-95 {
-      background: url("../images/UIs/retina/Day 95 - UI.jpg");
-      background: url("../images/UIs/retina/Day 95 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-95 {
       background: url("../images/UIs/full/Day 95 - UI.jpg");
@@ -2096,10 +1716,6 @@ button.view {
 #day-96 {
   background: url("../images/UIs/reg/Day 96 - UI.jpg");
   background: url("../images/UIs/reg/Day 96 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-96 {
-      background: url("../images/UIs/retina/Day 96 - UI.jpg");
-      background: url("../images/UIs/retina/Day 96 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-96 {
       background: url("../images/UIs/full/Day 96 - UI.jpg");
@@ -2108,10 +1724,6 @@ button.view {
 #day-97 {
   background: url("../images/UIs/reg/Day 97 - UI.jpg");
   background: url("../images/UIs/reg/Day 97 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-97 {
-      background: url("../images/UIs/retina/Day 97 - UI.jpg");
-      background: url("../images/UIs/retina/Day 97 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-97 {
       background: url("../images/UIs/full/Day 97 - UI.jpg");
@@ -2120,10 +1732,6 @@ button.view {
 #day-98 {
   background: url("../images/UIs/reg/Day 98 - UI.jpg");
   background: url("../images/UIs/reg/Day 98 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-98 {
-      background: url("../images/UIs/retina/Day 98 - UI.jpg");
-      background: url("../images/UIs/retina/Day 98 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-98 {
       background: url("../images/UIs/full/Day 98 - UI.jpg");
@@ -2132,10 +1740,6 @@ button.view {
 #day-99 {
   background: url("../images/UIs/reg/Day 99 - UI.jpg");
   background: url("../images/UIs/reg/Day 99 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-99 {
-      background: url("../images/UIs/retina/Day 99 - UI.jpg");
-      background: url("../images/UIs/retina/Day 99 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-99 {
       background: url("../images/UIs/full/Day 99 - UI.jpg");
@@ -2144,10 +1748,6 @@ button.view {
 #day-100 {
   background: url("../images/UIs/reg/Day 100 - UI.jpg");
   background: url("../images/UIs/reg/Day 100 - UI.jpg"); }
-  @media only screen and (min-width: 1440px) {
-    #day-100 {
-      background: url("../images/UIs/retina/Day 100 - UI.jpg");
-      background: url("../images/UIs/retina/Day 100 - UI.jpg"); } }
   @media only screen and (min-width: 1920px) {
     #day-100 {
       background: url("../images/UIs/full/Day 100 - UI.jpg");

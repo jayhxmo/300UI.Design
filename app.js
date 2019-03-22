@@ -25,18 +25,21 @@ var ttl = require('mongoose-ttl');
 var app = express();
 
 // Initialize Emailng System
+
 var options = {
     auth: {
-        api_key: process.env.SENDGRID_API_KEY
+        api_key: process.env.UIPROJECT_SENDGRID_API
     }
 };
 var mailer = nodemailer.createTransport(sgTransport(options));
 
-// var transport = nodemailer.createTransport(mandrillTransport({
-//     auth: {
-//         apiKey: process.env.MANDRILLAPIKEY
-//     }
-// }));
+// var transport = nodemailer.createTransport(
+//     mandrillTransport({
+//         auth: {
+//             apiKey: process.env.MANDRILLAPIKEY
+//         }
+//     })
+// );
 
 // Setup MongoDB
 var vipSchema = new mongoose.Schema({
@@ -77,15 +80,15 @@ mongoose.connect(
     { useMongoClient: true }
 );
 
-/****************************************************
- *****   D O     N O T     U N C O M M M E N T   *****
- ****************************************************/
+// **************************************************
+//  *****   D O     N O T     U N C O M M M E N T   *****
+//  ***************************************************
 // function fsMB(filename) {
 //     var stats = fs.statSync(filename)
 //     var fileSizeInBytes = stats["size"]
 //     return fileSizeInBytes / 1000000;
 // }
-
+//
 // for (var i = 1; i <= 100; i++) {
 //     var index = 100 - i;
 //     var dayEntry = new day({
@@ -96,19 +99,20 @@ mongoose.connect(
 //         size: Math.round(fsMB(__dirname + '/public/downloads/day' + all[index]["day"] + '.zip') * 10 ) / 10,
 //     });
 //     dayEntry.save();
-
+//
 //     // Output all the file sizes
 //     console.log(fsMB(__dirname + '/public/downloads/day' + all[index]["day"] + '.zip'));
 // }
-
+//
 // Middleware
+
 app.set('port', process.env.PORT || 5000);
 app.set('views', path.join(__dirname, 'views'));
-// app.engine('html', require('ejs').renderFile);
-// app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'ejs');
 app.use(logger('dev'));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
 app.use(express.static(path.join(__dirname, 'public')));
 
 nunjucks.configure(app.get('views'), {
@@ -238,6 +242,7 @@ app.use(function(req, res, next) {
     res.render('404.html');
 });
 
+// module.exports = app;
 app.listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
 });

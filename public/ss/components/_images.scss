@@ -2,9 +2,9 @@
 	#day-#{$i} {
 		@include background(url('../images/UIs/reg/Day #{$i} - UI.jpg'));
 
-		@media only screen and (min-width: 1440px) {
-			@include background(url('../images/UIs/retina/Day #{$i} - UI.jpg'));
-		}
+		// @media only screen and (min-width: 1440px) {
+		// 	@include background(url('../images/UIs/retina/Day #{$i} - UI.jpg'));
+		// }
 
 		// @media only screen and (min-width: 2881px) { //2880px + 1px
 		// 	@include background(url("../images/UIs/4k/Day #{$i} - UI.jpg"));

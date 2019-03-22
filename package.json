@@ -1,6 +1,6 @@
 {
-  "name": "UI-Backend",
-  "version": "0.0.0",
+  "name": "300ui.design",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -9,15 +9,17 @@
     "async": "^1.5.2",
     "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
+    "crypto": "^1.0.1",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "fs": "0.0.2",
-    "mongoose": "^4.4.7",
+    "mongoose": "^5.4.19",
     "mongoose-ttl": "0.0.3",
     "morgan": "^1.9.1",
     "nodemailer": "^2.3.0",
     "nodemailer-mandrill-transport": "^1.1.0",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "nunjucks": "^2.4.0",
+    "nunjucks": "^3.2.0",
     "sendgrid": "^2.0.0"
   }
 }
